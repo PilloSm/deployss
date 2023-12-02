@@ -22,10 +22,14 @@ export async function GET() {
     for (const comida of comidasResultados) {
       const idComida = comida.id_comidas;
 
-      const detallesComida = detPedidoResultados.filter((detalle) => detalle.id_comida === idComida);
+      const detallesComida = detPedidoResultados.filter(
+        (detalle) => detalle.id_comida === idComida
+      );
 
       const esPreparable = detallesComida.every((detalle) => {
-        const ingrediente = ingredientesResultados.find((ing) => ing.id_ingrediente === detalle.id_ingrediente);
+        const ingrediente = ingredientesResultados.find(
+          (ing) => ing.id_ingrediente === detalle.id_ingrediente
+        );
         return ingrediente && ingrediente.cantidad >= detalle.cantidad;
       });
 
@@ -33,10 +37,9 @@ export async function GET() {
         comidasDisponibles.push(comida);
       }
     }
-    console.log(comidasDisponibles)
-    return NextResponse.json(comidasDisponibles)
+    return NextResponse.json(comidasDisponibles);
   } catch (error) {
-    console.error('Error al ejecutar las consultas:', error);
-    return NextResponse.json({error:error},{status:500})
+    console.error("Error al ejecutar las consultas:", error);
+    return NextResponse.json({ error: error }, { status: 500 });
   }
 }

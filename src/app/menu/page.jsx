@@ -7,18 +7,15 @@ export default function YourComponent() {
   useEffect(() => {
     const fetchMenuData = async () => {
       try {
-        const res = await axios.get(
-          "/api/apiCliente/menu"
-        );
-        setMenuData(res.data);
+        const res = await axios.get("/api/apiCliente/menu");
+        setMenuData(res.data || null);
       } catch (error) {
         console.error("Error fetching menu data:", error);
       }
     };
-    console.log(menuData)
     fetchMenuData();
-  }, []); 
-  
+  }, []);
+
   return (
     <form className="bg-white flex flex-col items-center justify-center w-full overflow-hidden min-h-screen">
       <div className="w-full max-w-screen-2xl h-full flex flex-wrap justify-around bg-white relative">
@@ -27,9 +24,13 @@ export default function YourComponent() {
         </div>
 
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
-          {menuData.map((item)=>{
-            <CardCocina comidas={item}  />
-          })}
+          {menuData ? (
+            menuData.map((item) => {
+              return <CardCocina comidas={item} key={item.id} />;
+            })
+          ) : (
+            <div></div>
+          )}
         </div>
       </div>
     </form>
