@@ -3,14 +3,12 @@ import { Lock, Mail } from "lucide-react";
 import { signIn } from "next-auth/react";
 import { useState } from "react";
 import Link from "next/link";
-import ReCAPTCHA from "react-google-recaptcha";
 import { esContrasenaValida, esCorreoElectronico } from "@/libs/val";
 export default function FormInicio() {
   const [credentials, setCredentials] = useState({
     email: "",
     password: "",
   });
-  const [captcha, setCaptcha] = useState();
   const [error, setError] = useState("");
   const handleChange = (e) => {
     setCredentials({
@@ -117,10 +115,6 @@ export default function FormInicio() {
             Iniciar sesión con Google
           </div>
         </button>
-        {/* <ReCAPTCHA
-          sitekey="6LcY1x0pAAAAAJP9oTr0OHHCjlVu1ZIggttWZsYa "
-          onChange={setCaptcha}
-        /> */}
       </div>
     </div>
   );
