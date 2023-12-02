@@ -1,6 +1,5 @@
 "use client";
 import { signOut, useSession } from "next-auth/react";
-import BtnOpciones from "./BtnOpciones";
 import DatosCuenta from "./DatosCuenta";
 export default function InformacionCliente({ borrarCarrito }) {
   const { data: session, update } = useSession();

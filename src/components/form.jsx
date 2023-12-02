@@ -171,7 +171,7 @@ export default function Registrar() {
             </div>
           </button>
           <ReCAPTCHA
-            sitekey="6LcY1x0pAAAAAJP9oTr0OHHCjlVu1ZIggttWZsYa "
+           data-sitekey="6LcY1x0pAAAAAJP9oTr0OHHCjlVu1ZIggttWZsYa "
             className=""
             onChange={setCaptcha}
           />

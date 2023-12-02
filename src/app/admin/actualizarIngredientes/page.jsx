@@ -14,7 +14,7 @@ export default function Actualizar() {
   });
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/api/apiCafeteria/ingredientes`).then((res) => {
+    axios.get(`/api/apiCafeteria/ingredientes`).then((res) => {
       const { nombre, descripcion, precio, ingredientes } = res.data;
       setComidaN({
         nombre,
