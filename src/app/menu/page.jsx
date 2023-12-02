@@ -9,7 +9,7 @@ export default function YourComponent() {
     const fetchMenuData = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:3000/api/apiCliente/menu"
+          "/api/apiCliente/menu"
         );
         setMenuData(res.data);
       } catch (error) {
