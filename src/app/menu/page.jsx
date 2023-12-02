@@ -4,7 +4,6 @@ import axios from "axios";
 import CardCocina from "@/components/CardCocina";
 export default function YourComponent() {
   const [menuData, setMenuData] = useState(null);
-
   useEffect(() => {
     const fetchMenuData = async () => {
       try {
@@ -16,10 +15,10 @@ export default function YourComponent() {
         console.error("Error fetching menu data:", error);
       }
     };
-
+    console.log(menuData)
     fetchMenuData();
-  }, []); // The empty dependency array ensures that this effect runs once when the component mounts
-
+  }, []); 
+  
   return (
     <form className="bg-white flex flex-col items-center justify-center w-full overflow-hidden min-h-screen">
       <div className="w-full max-w-screen-2xl h-full flex flex-wrap justify-around bg-white relative">
@@ -28,9 +27,9 @@ export default function YourComponent() {
         </div>
 
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
-          {menuData.map((item) => (
-            <CardCocina key={item.id} comidas={item} />
-          ))}
+          {menuData.map((item)=>{
+            <CardCocina comidas={item}  />
+          })}
         </div>
       </div>
     </form>
