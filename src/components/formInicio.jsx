@@ -1,6 +1,6 @@
 "use client";
-import {  Lock, Mail } from "lucide-react";
-import { signIn, } from "next-auth/react";
+import { Lock, Mail } from "lucide-react";
+import { signIn } from "next-auth/react";
 import { useState } from "react";
 import Link from "next/link";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -34,18 +34,15 @@ export default function FormInicio() {
       setError("La contraseña debe tener al menos 6 caracteres.");
       return;
     }
-    if (captcha) {
-      try {
-        const res = await signIn("credentials", {
-          ...credentials,
-          callbackUrl: "/menu ",
-        });
-        if (res?.error) setError(res.error);
-      } catch (error) {
-        setError(error);
-      }
-    } else {
-      alert("Ingresa el captcha");
+
+    try {
+      const res = await signIn("credentials", {
+        ...credentials,
+        callbackUrl: "/menu ",
+      });
+      if (res?.error) setError(res.error);
+    } catch (error) {
+      setError(error);
     }
   };
   return (
@@ -105,13 +102,9 @@ export default function FormInicio() {
 
         <button
           onClick={() => {
-            if (captcha) {
-              signIn("google", {
-                callbackUrl: "/menu ",
-              });
-            } else {
-              alert("Ingresa el captcha");
-            }
+            signIn("google", {
+              callbackUrl: "/menu ",
+            });
           }}
           className=" bg-[#EFEFEF] rounded-full border-none my-4 cursor-pointer"
         >
