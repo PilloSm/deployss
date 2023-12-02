@@ -27,9 +27,7 @@ export default function FormComida({ comidas }) {
         .get(`/api/apiCliente/menu/${comidas}`)
         .then((response) => {
           const data = response.data;
-          console.log(data)
           if (data) {
-            console.log(data[0])
             setPlatillo(data[0]);
           } else {
             console.error("La respuesta no contiene datos válidos.");
@@ -55,28 +53,48 @@ export default function FormComida({ comidas }) {
   };
 
   const handleSubmit = () => {
-    console.log(comida)
-    if (esNumero(comida.cantidad) && !comida.cantidad > 0) {
+    if (esNumero(comida.cantidad) || !comida.cantidad > 0) {
       setError("Como asi");
-      alert('dkjas')
+      alert("dkjas");
       return;
     }
     if (session) {
-      const precioT =
-        session.user.carrito.total + platillo.precio * comida.cantidad;
-      const nuvo = {
-        nombre: platillo.nombre,
-        subtotal: platillo.precio * comida.cantidad,
-        cantidadM: platillo.cantidad_preparable,
-      };
-      const elemento = { ...comida, ...nuvo };
-      const cart = [...session.user.carrito.comidas, elemento];
-      const carritoF = {
-        total: precioT,
-        comidas: cart,
-      };
-      update({ carrito: carritoF });
-      router.push("/client/carrito");
+      const existingItemIndex = session.user.carrito.comidas.findIndex(
+        (item) => item.id_comida === comida.id_comida
+      );
+      if (existingItemIndex !== -1) {
+        const updatedCart = [...session.user.carrito.comidas];
+        const existingItem = updatedCart[existingItemIndex];
+        const existingQuantity = parseInt(existingItem.cantidad, 10);
+        const newQuantity = parseInt(comida.cantidad, 10);
+        existingItem.cantidad = existingQuantity + newQuantity;
+        const updatedTotal =
+          session.user.carrito.total + platillo.precio * newQuantity;
+        console.log(updatedTotal);
+        update({
+          carrito: {
+            total: updatedTotal,
+            comidas: updatedCart,
+          },
+        });
+        router.push("/client/carrito");
+      } else {
+        const precioT =
+          session.user.carrito.total + platillo.precio * comida.cantidad;
+        const nuvo = {
+          nombre: platillo.nombre,
+          subtotal: platillo.precio * comida.cantidad,
+          cantidadM: platillo.cantidad_preparable,
+        };
+        const elemento = { ...comida, ...nuvo };
+        const cart = [...session.user.carrito.comidas, elemento];
+        const carritoF = {
+          total: precioT,
+          comidas: cart,
+        };
+        update({ carrito: carritoF });
+        router.push("/client/carrito");
+      }
     }
   };
 

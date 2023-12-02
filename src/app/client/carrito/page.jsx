@@ -11,7 +11,6 @@ function Carrito() {
   return (
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-white w-full md:w-[768px] lg:w-[1024px] xl:w-[1440px] h-auto relative">
-
         <div className="absolute w-full md:w-[100px] top-[50px] left-[646px] transform -translate-x-1/2 font-nunito font-normal text-black text-[32px] md:text-[64px] text-center leading-normal tracking-normal">
           Carrito
         </div>
@@ -61,7 +60,7 @@ function Carrito() {
                         handleE(item.id_comida);
                       }}
                     >
-                      <Image src="/img/carrito/borrar-1.png" />
+                      <img src="/img/carrito/borrar-1.png" />
                     </button>
                   </tr>
                 </>
@@ -102,7 +101,7 @@ function Carrito() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Carrito;

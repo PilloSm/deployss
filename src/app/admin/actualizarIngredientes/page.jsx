@@ -75,7 +75,6 @@ export default function Actualizar() {
 
                       if (encontrado) {
                         encontrado.cantidad = comidaN[encontrado.nombre];
-
                         const res = await axios.put(
                           `/api/apiCafeteria/ingredientes`,
                           {
