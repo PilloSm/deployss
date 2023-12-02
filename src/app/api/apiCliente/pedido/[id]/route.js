@@ -21,6 +21,7 @@ export async function GET(request, { params }) {
   `);
     return NextResponse.json(res[0]);
   } catch (error) {
+    console.log(error)
     return NextResponse.json(
       { message: "ups ha habido un error" },
       { status: 500 }
