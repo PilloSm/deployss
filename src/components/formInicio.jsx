@@ -124,10 +124,10 @@ export default function FormInicio() {
             Iniciar sesión con Google
           </div>
         </button>
-        <ReCAPTCHA
+        {/* <ReCAPTCHA
           sitekey="6LcY1x0pAAAAAJP9oTr0OHHCjlVu1ZIggttWZsYa "
           onChange={setCaptcha}
-        />
+        /> */}
       </div>
     </div>
   );
