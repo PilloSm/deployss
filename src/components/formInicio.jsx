@@ -3,8 +3,10 @@ import { Lock, Mail } from "lucide-react";
 import { signIn } from "next-auth/react";
 import { useState } from "react";
 import Link from "next/link";
+import ReCAPTCHA from "react-google-recaptcha";
 import { esContrasenaValida, esCorreoElectronico } from "@/libs/val";
 export default function FormInicio() {
+  const [captcha, setCaptcha] = useState();
   const [credentials, setCredentials] = useState({
     email: "",
     password: "",
@@ -18,6 +20,10 @@ export default function FormInicio() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!captcha) {
+      alert("Ingrese el captcha");
+      return;
+    }
     if (!credentials.email || !credentials.password) {
       setError("Todos los campos son obligatorios.");
       return;
@@ -100,9 +106,14 @@ export default function FormInicio() {
 
         <button
           onClick={() => {
-            signIn("google", {
-              callbackUrl: "/menu ",
-            });
+            if (captcha) {
+              signIn("google", {
+                callbackUrl: "/menu ",
+              });
+            } else {
+              alert("Ingrese el captcha");
+              return;
+            }
           }}
           className=" bg-[#EFEFEF] rounded-full border-none my-4 cursor-pointer"
         >
@@ -115,6 +126,10 @@ export default function FormInicio() {
             Iniciar sesión con Google
           </div>
         </button>
+        <ReCAPTCHA
+          sitekey="6LfdFyMpAAAAADj24oYioDWsTquP9Xr5nTzbQuGk"
+          onChange={setCaptcha}
+        />
       </div>
     </div>
   );

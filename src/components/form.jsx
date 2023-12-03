@@ -32,10 +32,10 @@ export default function Registrar() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // if (!captcha) {
-    //   alert("ingrese captcha");
-    //   return;
-    // }
+    if (!captcha) {
+      alert("ingrese captcha");
+      return;
+    }
     if (!datos.nombre || !datos.email || !datos.password || !datos.password2) {
       setError("Todos los campos son obligatorios.");
       return;
@@ -60,15 +60,12 @@ export default function Registrar() {
       setError("Las contraseñas no coinciden.");
       return;
     }
-    console.log(datos)
+    console.log(datos);
     if (datos.password === datos.password2) {
-      const res = await axios.post(
-        "/api/apiCliente/registrar",
-        {
-          ...datos,
-          redirect: false,
-        }
-      );
+      const res = await axios.post("/api/apiCliente/registrar", {
+        ...datos,
+        redirect: false,
+      });
       if (res.status === 200) {
         const res = await signIn("credentials", {
           nombre: datos.nombre,
@@ -150,7 +147,7 @@ export default function Registrar() {
           <div className=" border-t border-gray-500 "></div>
           <p className="text-xl text-center">ó</p>
           <div className=" border-t border-gray-500 "></div>
-          {/* <button
+          <button
             onClick={() => {
               if (captcha) {
                 const res = signIn("google", {
@@ -172,10 +169,10 @@ export default function Registrar() {
             </div>
           </button>
           <ReCAPTCHA
-           data-sitekey="6LcY1x0pAAAAAJP9oTr0OHHCjlVu1ZIggttWZsYa "
+            data-sitekey="6LcY1x0pAAAAAJP9oTr0OHHCjlVu1ZIggttWZsYa "
             className=""
             onChange={setCaptcha}
-          /> */}
+          />
         </div>
       </div>
     </form>
