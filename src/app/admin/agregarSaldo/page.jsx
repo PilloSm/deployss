@@ -68,7 +68,7 @@ function AgregarSaldoAdmin() {
         <div className="absolute w-[450px] h-[48px] top-[160px] left-[60px] bg-white border border-[#797979] items-center">
           <input
             className="absolute h-[40px] text-[40px] w-[120px] left-[10px] block mb-2 text-sm font-medium  text-gray-900 dark:text-black outline-none"
-            placeholder="ID del usuario"
+            placeholder="Correo electronico"
             name="id"
             onChange={handleChange}
           />
@@ -80,10 +80,10 @@ function AgregarSaldoAdmin() {
             name="saldoMas"
             onChange={handleChange}
           >
-            <option value={20} selected>20</option>
-            <option value={50}>50</option>
-            <option value={100}>100</option>
-            <option value={20}>200</option>
+            <option selected>20</option>
+            <option>50</option>
+            <option>100</option>
+            <option>200</option>
           </select>
         </div>
 
