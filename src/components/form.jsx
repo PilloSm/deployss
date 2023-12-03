@@ -169,7 +169,7 @@ export default function Registrar() {
             </div>
           </button>
           <ReCAPTCHA
-            data-sitekey="6LcY1x0pAAAAAJP9oTr0OHHCjlVu1ZIggttWZsYa "
+            sitekey={process.env.CAPTCHA_SECRET}
             className=""
             onChange={setCaptcha}
           />
