@@ -20,7 +20,7 @@ export default function TablaExtras() {
 
   return (
     <div>
-  <h2>Tabla de Extras</h2>
+  <div className="text-center text-2xl font-nunito font-bold text-black mb-2">Tabla de Extras</div>
   <table className="w-full mt-5 border-collapse">
     <thead>
       <tr>
