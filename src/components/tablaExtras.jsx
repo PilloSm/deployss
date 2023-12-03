@@ -24,16 +24,16 @@ export default function TablaExtras() {
   <table className="w-full mt-5 border-collapse">
     <thead>
       <tr>
-        <th className="border bg-blue-500 text-white py-2 px-3">
+        <th className="border bg-[#25a18ee6] text-white py-2 px-3">
           Nombre
         </th>
-        <th className="border bg-blue-500 text-white py-2 px-3">
+        <th className="border bg-[#25a18ee6] text-white py-2 px-3">
           Cantidad
         </th>
-        <th className="border bg-blue-500 text-white py-2 px-3">
+        <th className="border bg-[#25a18ee6] text-white py-2 px-3">
           Tipo
         </th>
-        <th className="border bg-blue-500 text-white py-2 px-3">
+        <th className="border bg-[#25a18ee6] text-white py-2 px-3">
           Fecha
         </th>
       </tr>
