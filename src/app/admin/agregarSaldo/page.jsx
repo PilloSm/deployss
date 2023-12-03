@@ -80,10 +80,10 @@ function AgregarSaldoAdmin() {
             name="saldoMas"
             onChange={handleChange}
           >
-            <option selected>20</option>
-            <option>50</option>
-            <option>100</option>
-            <option>200</option>
+            <option value={20} selected>20</option>
+            <option value={50}>50</option>
+            <option value={100}>100</option>
+            <option value={20}>200</option>
           </select>
         </div>
 
