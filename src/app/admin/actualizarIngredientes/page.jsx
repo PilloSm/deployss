@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import BtnOpcionesAdmin from "@/components/BtnOpcionesAdmin";
 import { esNumero } from "@/libs/val";
+import TablaExtras from "@/components/tablaExtras";
 
 export default function Actualizar() {
   const [error, setError] = useState("");
@@ -56,7 +57,9 @@ export default function Actualizar() {
           <div className="flex flex-col space-y-4">
             {comidaN.ingredientes.map((ingrediente, index) => (
               <div className="flex flex-col space-y-1 items-center" key={index}>
-                <p className="text-lg font-nunito font-semibold">{ingrediente.nombre}</p>
+                <p className="text-lg font-nunito font-semibold">
+                  {ingrediente.nombre}
+                </p>
                 <p className="text-base font-nunito">Cantidad:</p>
                 <div className="flex items-center">
                   <input
@@ -70,7 +73,8 @@ export default function Actualizar() {
                     className="bg-[#25a18ee6] text-white p-1 rounded ml-2"
                     onClick={async () => {
                       const encontrado = comidaN.ingredientes.find(
-                        (item) => item.id_ingrediente === ingrediente.id_ingrediente
+                        (item) =>
+                          item.id_ingrediente === ingrediente.id_ingrediente
                       );
 
                       if (encontrado) {
@@ -87,7 +91,7 @@ export default function Actualizar() {
                           ...prevComidaN,
                           ingredientes: [...prevComidaN.ingredientes],
                         }));
-                        alert('se actualizo')
+                        alert("se actualizo");
                       } else {
                         alert("</3");
                       }
@@ -101,10 +105,7 @@ export default function Actualizar() {
           </div>
         </div>
       </div>
-
-      <table>
-        {/* tabla para ver entradas y salidas */}
-      </table>
+      <TablaExtras />
     </>
   );
 }

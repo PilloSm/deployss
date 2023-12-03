@@ -57,7 +57,7 @@ function Pedidos() {
         </div>
         <div className="absolute w-[431px] top-[820px] left-[570px] font-nunito font-normal text-black text-[64px] text-center leading-normal tracking-normal"></div>
 
-        <div className="flex relative w-[6000px] h-[480px] flex flex-nowrap overflow-scroll justify-start overflow-x-scroll overflow-y-hidden">
+        <div className="flex relative w-[600px] h-[480px] flex flex-nowrap overflow-scroll justify-start overflow-x-scroll overflow-y-hidden">
           {data2.map((detalle) => {
             <CardPedidos
               key={detalle.id_pedido}
