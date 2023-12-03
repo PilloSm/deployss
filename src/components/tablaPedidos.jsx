@@ -1,32 +1,12 @@
 "use client";
 import axios from "axios";
 import { useState, useEffect } from "react";
-export default  function TablaPedidos({ id_cuenta }) {
+export default function TablaPedidos({ id_cuenta }) {
   const [pedidos, setPedidos] = useState([]);
   const fetchData = async () => {
     try {
       const res = await axios.get(`/api/apiCliente/pedido/${id_cuenta}`);
-      const resultadosTransformados = res.data.map((resultado) => {
-        const cantidades = resultado.cantidades_detalles.split(",").map(Number);
-        const precios = resultado.precios_detalles.split(",").map(Number);
-        const nombresComidas = resultado.nombres_comidas.split(",");
-        if (
-          cantidades.length === precios.length &&
-          precios.length === nombresComidas.length
-        ) {
-          const idPedido = resultado.id_pedido;
-
-          return cantidades.map((cantidad, index) => ({
-            id_pedido: idPedido,
-            cantidad,
-            precio: precios[index],
-            nombre: nombresComidas[index],
-          }));
-        } else {
-          return [];
-        }
-      });
-      setPedidos(resultadosTransformados);
+      setPedidos(res.data);
     } catch (error) {
       console.error("Error fetching data:", error);
     }

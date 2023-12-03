@@ -1,6 +1,7 @@
 "use client";
 
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 export default function CardPedidos({
   id_pedido,
@@ -11,18 +12,19 @@ export default function CardPedidos({
   estado_actual_nombre,
   estado_actual_id,
 }) {
+  const router = useRouter();
   const handleEditar = async (e) => {
     const res = await axios.put(
       `/api/apiCafeteria/cambiarEstadoPedido/${id_pedido}`,
       { estado: estado_actual_id }
     );
+    router.push("/admin/pedidos");
   };
   const handleCancelar = async (e) => {
     const res = await axios.post(
       `/api/apiCafeteria/cambiarEstadoPedido/${id_pedido}`,
       { estado: 1 }
     );
-
   };
   return (
     <div className="relative mx-2 w-[303px] h-[402px] top-[30px]">
@@ -30,9 +32,12 @@ export default function CardPedidos({
         <div className="w-[303px] h-[350px] top-[52px] bg-[#f4f5f6] rounded-[40px] shadow-md relative left-0"></div>
         <div className="absolute w-[204px] top-[59px] left-[40px] font-nunito font-normal text-black text-[28px] text-center leading-normal tracking-normal">
           <p className="relative top-[20px] font-bold">{nombres_comidas}</p>
-          <p className="absolute left-[25px] w-[190px] top-[110px] text-left">Cantidad: {cantidades_detalles}</p>
-          <p className="absolute left-[30px] w-[190px] top-[160px] text-left">Usuario: {id_cuenta}</p>
-          
+          <p className="absolute left-[25px] w-[190px] top-[110px] text-left">
+            Cantidad: {cantidades_detalles}
+          </p>
+          <p className="absolute left-[30px] w-[190px] top-[160px] text-left">
+            Usuario: {id_cuenta}
+          </p>
         </div>
         <button
           onClick={handleEditar}
@@ -48,7 +53,9 @@ export default function CardPedidos({
             <div className="pedir">Cancelar Pedido</div>
           </button>
         ) : (
-          <h1 className="absolute w-[120px] h-[100px] bottom-[0px] left-[185px] left-1px font-bold text-[40px]">NO</h1>
+          <h1 className="absolute w-[120px] h-[100px] bottom-[0px] left-[185px] left-1px font-bold text-[40px]">
+            NO
+          </h1>
         )}
       </div>
     </div>

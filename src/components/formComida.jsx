@@ -68,14 +68,15 @@ export default function FormComida({ comidas }) {
         const existingQuantity = parseInt(existingItem.cantidad, 10);
         const newQuantity = parseInt(comida.cantidad, 10);
         existingItem.cantidad = existingQuantity + newQuantity;
+        existingItem.subtotal += platillo.precio * newQuantity; 
         const updatedTotal =
           session.user.carrito.total + platillo.precio * newQuantity;
-        console.log(updatedTotal);
+        const carritoActualizado = {
+          total: updatedTotal,
+          comidas: updatedCart,
+        };
         update({
-          carrito: {
-            total: updatedTotal,
-            comidas: updatedCart,
-          },
+          carrito: carritoActualizado,
         });
         router.push("/client/carrito");
       } else {
