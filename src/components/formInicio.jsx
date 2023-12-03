@@ -127,7 +127,7 @@ export default function FormInicio() {
           </div>
         </button>
         <ReCAPTCHA
-          sitekey={process.env.CAPTCHA_SECRET}
+          sitekey='6Lc49CMpAAAAAIlNkRIi5n3uBDuHIrH1fPEECZfU'
           onChange={setCaptcha}
         />
       </div>
