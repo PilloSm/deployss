@@ -54,7 +54,7 @@ function AgregarSaldoAdmin() {
     <div className="bg-bg-[#25a18ee6] flex flex-row justify-center w-full shadow-lg">
   <div className="w-[1440px] h-[924px] relative">
 
-    <div className="absolute w-[600px] h-[500px] top-[80px] left-[504px] shadow-lg rounded-[50px] font-nunito">
+    <div className="bg-white absolute w-[600px] h-[500px] top-[80px] left-[504px] shadow-lg rounded-[50px] font-nunito">
       <div className="absolute w-[431px] top-[20px] left-[70px] font-normal text-black text-[54px] text-center leading-normal tracking-normal">
         Agregar Saldo
       </div>
