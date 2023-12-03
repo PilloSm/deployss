@@ -20,31 +20,37 @@ export default function TablaExtras() {
 
   return (
     <div>
-      <h2>Tabla de Extras</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Cantidad</th>
-            <th>Tipo</th>
-            <th>Fecha</th>
-          </tr>
-        </thead>
-        <tbody>
-          {extras.map((extra) => (
-            <tr key={extra.id}>
-              <td>{extra.nombre_ingrediente}</td>
-              <td>{extra.cantidad}</td>
-              <td>
-                {extra.tipo === 1
-                  ? "Entrada de ingrediente"
-                  : "Salida de ingrediente"}
-              </td>
-              <td>{extra.fecha}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+  <h2>Tabla de Extras</h2>
+  <table className="w-full mt-5 border-collapse">
+    <thead>
+      <tr>
+        <th className="border bg-blue-500 text-white py-2 px-3">
+          Nombre
+        </th>
+        <th className="border bg-blue-500 text-white py-2 px-3">
+          Cantidad
+        </th>
+        <th className="border bg-blue-500 text-white py-2 px-3">
+          Tipo
+        </th>
+        <th className="border bg-blue-500 text-white py-2 px-3">
+          Fecha
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {extras.map((extra) => (
+        <tr key={extra.id}>
+          <td className="border px-3 py-2">{extra.nombre_ingrediente}</td>
+          <td className="border px-3 py-2">{extra.cantidad}</td>
+          <td className="border px-3 py-2">
+            {extra.tipo === 1 ? "Entrada de ingrediente" : "Salida de ingrediente"}
+          </td>
+          <td className="border px-3 py-2">{extra.fecha}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
   );
 }
