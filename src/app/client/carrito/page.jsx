@@ -9,9 +9,9 @@ function Carrito() {
   const carrito = session.user.carrito;
   const [error, setError] = useState("");
   return (
-    <div className="bg-white flex flex-row justify-center w-full">
-      <div className="bg-white w-full md:w-[768px] lg:w-[1024px] xl:w-[1440px] h-auto relative">
-        <div className="absolute w-full md:w-[100px] top-[50px] left-[646px] transform -translate-x-1/2 font-nunito font-normal text-black text-[32px] md:text-[64px] text-center leading-normal tracking-normal">
+    <div className="bg-white flex flex-col justify-center items-center w-full">
+      <div className="bg-white w-full md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1440px] h-auto relative p-4">
+      <div className="absolute w-full md:w-[100px] top-[20px] md:top-[50px] left-[50%] md:left-[646px] transform -translate-x-1/2 font-nunito font-normal text-black text-[24px] md:text-[32px] text-center leading-normal tracking-normal">
           Carrito
         </div>
         {session.user.carrito.total > 0 ? (
@@ -84,7 +84,7 @@ function Carrito() {
           </div>
         </div>
 
-        <div className="babsolute w-[893px] h-[88px] top-[743px] left-[567px]">
+        <div className="w-full md:max-w-[893px] h-[88px] top-[743px] md:top-[auto] left-1/2 transform -translate-x-1/2">
           <BtonPedir
             onClick={() => {
               if (session.user.saldo < session.user.carrito.total) {
