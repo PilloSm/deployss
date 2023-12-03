@@ -72,7 +72,7 @@ export default function Ingredientes() {
   return (
     <div className="flex justify-center items-center h-screen">
   <div className="w-full lg:max-w-[80%] xl:max-w-[60%] 2xl:max-w-[50%]">
-    <div className="bg-white relative p-8 lg:p-16 xl:p-20 2xl:p-24 rounded-[50px] shadow-lg">
+    <div className="bg-white relative h-[800px]  p-8 lg:p-16 xl:p-20 2xl:p-24 rounded-[50px] shadow-lg">
       <div className="font-nunito font-normal text-black text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-center leading-normal tracking-normal mb-8">
         Crear Ingrediente
       </div>
