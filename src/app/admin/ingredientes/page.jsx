@@ -70,12 +70,12 @@ export default function Ingredientes() {
   };
 
   return (
-    <div className="flex flex-row justify-center w-full">
-      <div className="w-full lg:w-[80%] xl:w-[60%] 2xl:w-[50%] flex flex-wrap justify-around relative">
-        <div className="bg-white absolute w-[600px] h-[800px] top-[80px] left-[504px] shadow-lg rounded-[50px]">
-          <div className="absolute top-[24px] left-[120px] font-nunito font-normal text-black text-[40px] text-center leading-normal tracking-normal">
-            Crear Ingrediente
-          </div>
+    <div className="flex justify-center items-center h-screen">
+  <div className="w-full lg:max-w-[80%] xl:max-w-[60%] 2xl:max-w-[50%]">
+    <div className="bg-white relative p-8 lg:p-16 xl:p-20 2xl:p-24 rounded-[50px] shadow-lg">
+      <div className="font-nunito font-normal text-black text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-center leading-normal tracking-normal mb-8">
+        Crear Ingrediente
+      </div>
 
           <form onSubmit={handleSubmit}>
             <div className="absolute w-[219px] top-[121px] left-[63px] font-poppins font-normal text-[#09090999] text-[16px] leading-[24px] tracking-[0.15px]">
