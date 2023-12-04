@@ -41,7 +41,9 @@ function Pedidos() {
 
 
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
+
         {data1.map((detalle) => (
+          
             <CardPedidos
               key={detalle.id_pedido} // Agrega una clave única para cada elemento en el array
               id_pedido={detalle.id_pedido}
