@@ -79,7 +79,7 @@ export default function Ingredientes() {
       </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-6">
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col items-center space-y-2"> {/* Reducido espacio aquí */}
           <label htmlFor="nombre" className="text-[#09090999] text-[16px] mb-1">
             Nombre
           </label>
@@ -92,7 +92,7 @@ export default function Ingredientes() {
           />
         </div>
 
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col items-center space-y-2"> {/* Reducido espacio aquí */}
           <label htmlFor="unidad" className="text-[#09090999] text-[16px] mb-1">
             Unidad
           </label>
@@ -110,7 +110,7 @@ export default function Ingredientes() {
           </select>
         </div>
 
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col items-center space-y-2"> {/* Reducido espacio aquí */}
           <label htmlFor="cantidad" className="text-[#09090999] text-[16px] mb-1">
             Cantidad
           </label>
@@ -123,7 +123,7 @@ export default function Ingredientes() {
           />
         </div>
 
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col items-center space-y-2"> {/* Reducido espacio aquí */}
           <label htmlFor="precio" className="text-[#09090999] text-[16px] mb-1">
             Precio
           </label>
