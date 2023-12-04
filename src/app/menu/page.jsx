@@ -26,7 +26,7 @@ export default function YourComponent() {
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
           {menuData ? (
             menuData.map((item) => {
-              return <CardCocina comidas={item} key={item.id} />;
+              return <CardCocina comidas={item} key={item.id} />
             })
           ) : (
             <div></div>
