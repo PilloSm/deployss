@@ -70,7 +70,7 @@ export default function Ingredientes() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex bg-gradient-to-r from-gray-300 via-gray-400 to-white p-8 justify-center items-center h-screen">
       <div className="w-full lg:max-w-[80%] xl:max-w-[60%] 2xl:max-w-[50%]">
         <div className="bg-white relative p-8 lg:p-16 xl:p-20 2xl:p-24 rounded-[50px] shadow-lg flex flex-col items-center space-y-6">
           <div className="text-4xl font-bold text-center leading-normal tracking-normal">
