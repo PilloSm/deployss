@@ -12,7 +12,12 @@ const BtnOpcionesAdmin = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="w-50 h-50 cursor-pointer bg-transparent border-none"
       >
-        <img width={50} height={50} src="https://i.ibb.co/hmdxg59/btn-opciones.png" alt="menu" />
+        <img
+          width={50}
+          height={50}
+          src="https://i.ibb.co/hmdxg59/btn-opciones.png"
+          alt="menu"
+        />
       </button>
 
       {isOpen && (
@@ -22,120 +27,123 @@ const BtnOpcionesAdmin = () => {
               onClick={() => setIsOpen(false)}
               className="text-white text-lg mb-4"
             >
-                ✖️
+              ✖️
+            </button>
+            <nav className="space-y-4">
+              <Link
+                href="/admin/pedidos"
+                className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
+              >
+                <img
+                  width={50}
+                  height={50}
+                  className="pl-[4px]"
+                  src="/img/sidebar/icon-pedidos.png"
+                  alt=""
+                />
+                Pedidos
+              </Link>
+
+              <Link
+                href="/admin/pedidos2"
+                className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
+              >
+                <img
+                  width={50}
+                  height={50}
+                  className="pl-[4px]"
+                  src="/img/sidebar/icon-pedidos.png"
+                  alt=""
+                />
+                Pedidos 2
+              </Link>
+
+              <Link
+                href="/admin/pedidos3"
+                className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
+              >
+                <img
+                  width={50}
+                  height={50}
+                  className="pl-[4px]"
+                  src="/img/sidebar/icon-pedidos.png"
+                  alt=""
+                />
+                Pedidos 3
+              </Link>
+
+              <Link
+                href="/admin/agregarSaldo"
+                className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
+              >
+                <img
+                  width={50}
+                  height={50}
+                  className="pl-[4px]"
+                  src="/img/sidebar/cartera-icon2.png"
+                  alt=""
+                />
+                Agregar Saldo
+              </Link>
+
+              <Link
+                href="/admin/comidas"
+                className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
+              >
+                <img
+                  width={50}
+                  height={50}
+                  className="pl-[4px]"
+                  src="/img/sidebar/icons8-barra-de-comida-24.png"
+                  alt=""
+                />
+                Comidas
+              </Link>
+
+              <Link
+                href="/admin/ingredientes"
+                className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
+              >
+                <img
+                  width={50}
+                  height={50}
+                  className="pl-[4px]"
+                  src="/img/sidebar/lechuga.png"
+                  alt=""
+                />
+                Ingredientes
+              </Link>
+
+              <Link
+                href="/admin/actualizarIngredientes"
+                className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
+              >
+                <img
+                  width={50}
+                  height={50}
+                  className="pl-[4px]"
+                  src="/img/sidebar/icons8-actualizar-30.png"
+                  alt=""
+                />
+                Actualizar Ingrediente
+              </Link>
+
+              <button
+                className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
+                onClick={() => {
+                  signOut();
+                }}
+              >
+                <img
+                  width={50}
+                  height={50}
+                  className="pl-[4px]"
+                  src="/img/sidebar/logout.png"
+                  alt=""
+                />
+                Cerrar sesion
               </button>
-              <nav className="space-y-4">
-
-                <Link
-                  href="/admin/pedidos"
-                  className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
-                >
-                  <img width={50} height={50}
-                    className="pl-[4px]"
-                    src="/img/sidebar/icon-pedidos.png"
-                    alt=""
-                  />
-                  Pedidos
-                </Link>
-
-                <Link
-                  href="/admin/pedidos2"
-                  className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
-                >
-                  <img width={50} height={50}
-                    className="pl-[4px]"
-                    src="/img/sidebar/icon-pedidos.png"
-                    alt=""
-                  />
-                  Pedidos 2
-                </Link>
-
-                <Link
-                  href="/admin/pedidos3"
-                  className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
-                >
-                  <img width={50} height={50}
-                    className="pl-[4px]"
-                    src="/img/sidebar/icon-pedidos.png"
-                    alt=""
-                  />
-                  Pedidos 3
-                </Link>
-
-                <Link
-                  href="/admin/pedidos4"
-                  className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
-                >
-                  <img width={50} height={50}
-                    className="pl-[4px]"
-                    src="/img/sidebar/icon-pedidos.png"
-                    alt=""
-                  />
-                  Pedidos 4
-                </Link>
-
-                <Link
-                  href="/admin/agregarSaldo"
-                  className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
-                >
-                  <img width={50} height={50}
-                    className="pl-[4px]"
-                    src="/img/sidebar/cartera-icon2.png"
-                    alt=""
-                  />
-                  Agregar Saldo
-                </Link>
-
-                <Link
-                  href="/admin/comidas"
-                  className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
-                >
-                  <img width={50} height={50}
-                    className="pl-[4px]"
-                    src="/img/sidebar/icons8-barra-de-comida-24.png"
-                    alt=""
-                  />
-                  Comidas
-                </Link>
-
-                <Link
-                  href="/admin/ingredientes"
-                  className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
-                >
-                  <img width={50} height={50}
-                    className="pl-[4px]"
-                    src="/img/sidebar/lechuga.png"
-                    alt=""
-                  />
-                  Ingredientes
-                </Link>
-
-                <Link
-                  href="/admin/actualizarIngredientes"
-                  className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
-                >
-                  <img width={50} height={50}
-                    className="pl-[4px]"
-                    src="/img/sidebar/icons8-actualizar-30.png"
-                    alt=""
-                  />
-                  Actualizar Ingrediente
-                </Link>
-
-                <button
-                  className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
-                  onClick={() => {
-                    signOut();
-                  }}
-                >
-                  <img width={50} height={50}
-                    className="pl-[4px]"
-                    src="/img/sidebar/logout.png"
-                    alt=""
-                  />
-                  Cerrar sesion
-                </button>
-                </nav>
+            </nav>
           </div>
         </div>
       )}
