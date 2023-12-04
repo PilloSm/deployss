@@ -29,7 +29,5 @@ export function soloLetras(valor) {
 }
 export function soloLetrasDescripcion(valor) {
   const expresionRegularLetras = /^[a-zA-Z\s]+$/;
-  console.log(expresionRegularLetras.test(valor));
-  console.log("es " + valor);
   return expresionRegularLetras.test(valor);
 }

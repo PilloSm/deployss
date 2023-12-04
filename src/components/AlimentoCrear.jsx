@@ -79,7 +79,7 @@ function AlimentoForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (
-      !soloLetras(comidaN.nombre) ||
+      !soloLetrasDescripcion(comidaN.nombre) ||
       !soloLetrasDescripcion(comidaN.descripcion)
     ) {
       setError("DS");
