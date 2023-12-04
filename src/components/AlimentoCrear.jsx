@@ -325,7 +325,7 @@ function AlimentoForm() {
         <br />
         <button
           onClick={handleSubmit}
-          className="bg-[#25a18ee6] hover:bg-[#3AAA91] text-white font-bold py-2 px-4 rounded"
+          className="bg-[#25a18ee6] hover:bg-[#3AAA91] w-full text-white font-bold py-2 px-4 rounded"
         >
           Crear Producto
         </button>
