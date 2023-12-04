@@ -223,7 +223,7 @@ function AlimentoForm() {
           <br />
           {[...Array(numeroIteraciones)].map((_, index) => (
             <div className="bt-4" key={index}>
-              <label>
+              <label className="text-black">
                 Ingrediente {index + 1}:
                 <select
                   className="outline-black"
@@ -237,7 +237,7 @@ function AlimentoForm() {
                   }
                 >
                   <br />
-                  <option className="mt-4" value="">
+                  <option className="mt-4 text-black" value="">
                     Seleccionar Ingrediente
                   </option>
                   {datos.ingrediente.map((ingrediente) => (
@@ -251,7 +251,7 @@ function AlimentoForm() {
                 </select>
               </label>
               <br />
-              <label className="mb-4">
+              <label className="mb-4 text-black">
                 Cantidad:
                 <input
                   className="shadow text-black appearance-none border rounded ml-2"
@@ -279,7 +279,7 @@ function AlimentoForm() {
           }}
         >
           <br />
-          <option value="">Seleccionar tipo</option>
+          <option value="" className="text-black">Seleccionar tipo</option>
           {comidaN.tipo.map((item) => (
             <>
               <br />
