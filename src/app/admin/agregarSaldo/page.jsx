@@ -88,7 +88,7 @@ function AgregarSaldoAdmin() {
         </div>
 
         <button className="absolute w-[460px] h-[65px] top-[370px] left-[70px] bg-[#25a18ee6] rounded-full border-none cursor-pointer">
-          <div className="absolute w-[523px] h-[20px] top-[20px] left-[-30px] font-poppins-bold text-white text-[22px] text-center leading-[20px]">
+          <div className="absolute w-[523px] h-[10px] top-[20px] left-[-30px] font-poppins-bold text-white text-[22px] text-center leading-[20px]">
             Agregar
           </div>
         </button>
