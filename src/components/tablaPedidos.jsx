@@ -20,45 +20,45 @@ export default function TablaPedidos({ id_cuenta }) {
       <table className="absolute min-w-full max-w-md bg-white border border-gray-300 top-[180px] mx-5 mr-5">
         <thead className="bg-[#25a18ee6]">
           <tr>
-            <th className="py-2 px-2 md:px-4 border-b">ID Pedido</th>
-            <th className="py-2 px-2 md:px-4 border-b">Total</th>
-            <th className="py-2 px-2 md:px-4 border-b">Estado</th>
-            <th className="py-2 px-2 md:px-4 border-b">Fecha</th>
-            <th className="py-2 px-2 md:px-4 border-b">Cantidades Detalles</th>
-            <th className="py-2 px-2 md:px-4 border-b">Precios Detalles</th>
-            <th className="py-2 px-2 md:px-4 border-b">Nombres Comidas</th>
+            <th className="py-2 px-2 md:px-4 border-b text-white">ID Pedido</th>
+            <th className="py-2 px-2 md:px-4 border-b text-white">Total</th>
+            <th className="py-2 px-2 md:px-4 border-b text-white">Estado</th>
+            <th className="py-2 px-2 md:px-4 border-b text-white">Fecha</th>
+            <th className="py-2 px-2 md:px-4 border-b text-white">Cantidades Detalles</th>
+            <th className="py-2 px-2 md:px-4 border-b text-white">Precios Detalles</th>
+            <th className="py-2 px-2 md:px-4 border-b text-white">Nombres Comidas</th>
           </tr>
         </thead>
         <tbody>
           {pedidos.map((pedido) => (
             <tr key={pedido.id_pedido}>
-              <td className="py-2 px-2 md:px-4 border-b text-center">
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
                 {pedido.id_pedido}
               </td>
-              <td className="py-2 px-2 md:px-4 border-b text-center">
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
                 {pedido.total}
               </td>
-              <td className="py-2 px-2 md:px-4 border-b text-center">
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
                 {pedido.estado_nombre}
               </td>
-              <td className="py-2 px-2 md:px-4 border-b text-center">
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
                 {pedido.fecha}
               </td>
-              <td className="py-2 px-2 md:px-4 border-b text-center">
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
                 {pedido.cantidades_detalles.split(",").map((detalle, index) => (
                   <div key={index} className="mb-1">
                     {detalle}
                   </div>
                 ))}
               </td>
-              <td className="py-2 px-2 md:px-4 border-b text-center">
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
                 {pedido.precios_detalles.split(",").map((detalle, index) => (
                   <div key={index} className="mb-1">
                     {detalle}
                   </div>
                 ))}
               </td>
-              <td className="py-2 px-2 md:px-4 border-b text-center">
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
                 {pedido.nombres_comidas.split(",").map((detalle, index) => (
                   <div key={index} className="mb-1">
                     {detalle}
