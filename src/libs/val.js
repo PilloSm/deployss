@@ -33,4 +33,3 @@ export function soloLetrasDescripcion(valor) {
   console.log("es " + valor);
   return expresionRegularLetras.test(valor);
 }
-  

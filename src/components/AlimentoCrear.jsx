@@ -2,7 +2,7 @@
 import axios from "axios";
 import { useRef, useState, useEffect } from "react";
 import { useRouter, useParams } from "next/navigation";
-import { esNumero, soloLetras } from "@/libs/val";
+import { esNumero, soloLetras, soloLetrasDescripcion } from "@/libs/val";
 function AlimentoForm() {
   const [error, setError] = useState("");
   const [numeroIteraciones, setNumeroIteraciones] = useState(1);
@@ -78,7 +78,10 @@ function AlimentoForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!soloLetras(comidaN.nombre) || !soloLetras(comidaN.descripcion)) {
+    if (
+      !soloLetras(comidaN.nombre) ||
+      !soloLetrasDescripcion(comidaN.descripcion)
+    ) {
       setError("DS");
       alert("1");
       return;
@@ -270,7 +273,7 @@ function AlimentoForm() {
         </div>
         <br />
         <select
-        className="text-black"
+          className="text-black"
           name="tipo"
           onChange={(e) => {
             setDatos({
@@ -280,7 +283,9 @@ function AlimentoForm() {
           }}
         >
           <br />
-          <option value="" className="text-black">Seleccionar tipo</option>
+          <option value="" className="text-black">
+            Seleccionar tipo
+          </option>
           {comidaN.tipo.map((item) => (
             <>
               <br />

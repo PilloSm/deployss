@@ -4,21 +4,12 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 function Pedidos() {
-  const [data1, setData1] = useState([]);
-  const [data2, setData2] = useState([]);
-  const [data3, setData3] = useState([]);
-  const [data4, setData4] = useState([]);
+  const [data, setData] = useState([]);
   const fetchData = async () => {
     try {
-      const res1 = await axios.get(`/api/apiCafeteria/pedidos/2`);
-      const res2 = await axios.get(`/api/apiCafeteria/pedidos/3`);
-      const res3 = await axios.get(`/api/apiCafeteria/pedidos/4`);
-      const res4 = await axios.get(`/api/apiCafeteria/pedidos/5`);
-
-      setData1(res1.data);
-      setData2(res2.data);
-      setData3(res3.data);
-      setData4(res4.data);
+      const res = await axios.get(`/api/apiCafeteria/pedidos/2`);
+      setData(res.data);
+      console.log(data);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -26,7 +17,9 @@ function Pedidos() {
 
   useEffect(() => {
     fetchData();
-    console.log(data2)
+    console.log(data);
+    console.log("separacions");
+    console.log(data);
     const interval = setInterval(() => {
       fetchData();
     }, 60 * 1000);
@@ -41,16 +34,16 @@ function Pedidos() {
         </div>
 
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
-          {data1.map((detalle) => (
+          {data.map((item, index) => (
             <CardPedidos
-              key={detalle.id_pedido} // Agrega una clave única para cada elemento en el array
-              id_pedido={detalle.id_pedido}
-              nombres_comidas={detalle.nombres_comidas}
-              cantidades_detalles={detalle.cantidades_detalles}
-              id_cuenta={detalle.id_cuenta}
-              estado_siguiente_nombre={detalle.estado_siguiente_nombre}
-              estado_actual_nombre={detalle.estado_actual_nombre}
-              estado_actual_id={detalle.estado_actual_id}
+              key={index} // Agrega una clave única para cada elemento en el array
+              id_pedido={item.id_pedido}
+              nombres_comidas={item.nombres_comidas}
+              cantidades_items={item.cantidades_items}
+              id_cuenta={item.nombre_usuario}
+              estado_siguiente_nombre={item.estado_siguiente_nombre}
+              estado_actual_nombre={item.estado_actual_nombre}
+              estado_actual_id={item.estado_actual_id}
             />
           ))}
         </div>
@@ -60,6 +53,3 @@ function Pedidos() {
 }
 
 export default Pedidos;
-
-
-

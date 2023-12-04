@@ -24,8 +24,7 @@ export default function Actualizar() {
         ingredientes,
       });
     });
-  }, []); // Añadí un arreglo vacío para que el efecto se ejecute solo una vez al montar el componente
-
+  }, []); 
   const handleChangeCantidad = (e) => {
     if (!esNumero(parseInt(e.target.value, 10))) {
       setError("dka");
