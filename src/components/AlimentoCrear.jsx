@@ -270,6 +270,7 @@ function AlimentoForm() {
         </div>
         <br />
         <select
+        className="text-black"
           name="tipo"
           onChange={(e) => {
             setDatos({
