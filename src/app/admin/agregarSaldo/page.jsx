@@ -51,8 +51,8 @@ function AgregarSaldoAdmin() {
   };
 
   return (
-    <div className="bg-bg-[#25a18ee6] flex flex-row justify-center w-full shadow-lg">
-  <div className="w-[1440px] h-[924px] relative">
+    <div className="flex items-center justify-center min-h-screen bg-bg-[#25a18ee6]">
+  <div className="bg-white w-[600px] h-[500px] shadow-lg rounded-[50px] relative">
 
     <div className="bg-white absolute w-[600px] h-[500px] top-[80px] left-[504px] shadow-lg rounded-[50px] font-nunito">
       <div className="absolute w-[431px] top-[20px] left-[70px] text-4xl font-bold text-center leading-normal tracking-normal">
@@ -67,7 +67,7 @@ function AgregarSaldoAdmin() {
 
         <div className="absolute w-[450px] h-[48px] top-[160px] left-[60px] bg-white border border-[#797979] items-center">
           <input
-            className="absolute h-[40px] text-[40px] w-[400px] left-[10px] block mb-2 text-sm font-medium  text-gray-900 dark:text-black outline-none"
+            className="absolute h-[40px] text-[40px] w-[400px] left-[10px] top-[5px] block mb-2 text-sm font-medium  text-gray-900 dark:text-black outline-none"
             placeholder="Correo electronico"
             name="id"
             onChange={handleChange}
