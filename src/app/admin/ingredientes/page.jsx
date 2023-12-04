@@ -45,11 +45,12 @@ export default function Ingredientes() {
       alert("Ingrese bien los datos");
       return;
     }
-    if (!unidades.some((unidad) => unidad.id_unidad === datos.unidad)) {
+    if (!unidades.some((unidad) => unidad.id_unidad == datos.unidad)) {
+      console.log(unidad)
       console.error("El valor de unidad seleccionado no es válido.");
       return;
     }
-    if (soloLetras(datos.nombre)) {
+    if (!soloLetras(datos.nombre)) {
       alert("No es un nombre valido");
       return;
     }
