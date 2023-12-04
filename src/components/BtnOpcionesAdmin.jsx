@@ -41,7 +41,7 @@ const BtnOpcionesAdmin = () => {
                   src="/img/sidebar/icon-pedidos.png"
                   alt=""
                 />
-                Pedidos
+                Pedidos Entrantes
               </Link>
 
               <Link
@@ -55,7 +55,7 @@ const BtnOpcionesAdmin = () => {
                   src="/img/sidebar/icon-pedidos.png"
                   alt=""
                 />
-                Pedidos 2
+                Pedidos Preparandose
               </Link>
 
               <Link
@@ -69,7 +69,7 @@ const BtnOpcionesAdmin = () => {
                   src="/img/sidebar/icon-pedidos.png"
                   alt=""
                 />
-                Pedidos 3
+                Pedidos Terminados
               </Link>
 
               <Link
