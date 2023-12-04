@@ -151,7 +151,7 @@ function AlimentoForm() {
 
   return (
     <div className="absolute left-[400px] top-[60px] font-nunito">
-      <h1 className="text-4xl font-bold text-center mb-8">
+      <h1 className="text-4xl text-black font-bold text-center mb-8">
         Crear Nuevo Producto
       </h1>
       <form
