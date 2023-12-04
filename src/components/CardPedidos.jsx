@@ -25,6 +25,7 @@ export default function CardPedidos({
       `/api/apiCafeteria/cambiarEstadoPedido/${id_pedido}`,
       { estado: 1 }
     );
+        router.push("/admin/pedidos");
   };
   return (
     <div className="relative mx-2 w-[303px] h-[402px] top-[30px]">

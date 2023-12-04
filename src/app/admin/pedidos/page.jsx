@@ -47,7 +47,7 @@ function Pedidos() {
               id_pedido={detalle.id_pedido}
               nombres_comidas={detalle.nombres_comidas}
               cantidades_detalles={detalle.cantidades_detalles}
-              id_cuenta={detalle.id_cuenta}
+              id_cuenta={detalle.nombre_usuario}
               estado_siguiente_nombre={detalle.estado_siguiente_nombre}
               estado_actual_nombre={detalle.estado_actual_nombre}
               estado_actual_id={detalle.estado_actual_id}
