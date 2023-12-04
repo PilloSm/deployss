@@ -39,6 +39,44 @@ const BtnOpcionesAdmin = () => {
                 </Link>
 
                 <Link
+                  href="/admin/pedidos2"
+                  className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
+                >
+                  <img width={50} height={50}
+                    className="pl-[4px]"
+                    src="/img/sidebar/icon-pedidos.png"
+                    alt=""
+                  />
+                  Pedidos 2
+                </Link>
+
+                <Link
+                  href="/admin/pedidos3"
+                  className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
+                >
+                  <img width={50} height={50}
+                    className="pl-[4px]"
+                    src="/img/sidebar/icon-pedidos.png"
+                    alt=""
+                  />
+                  Pedidos 3
+
+                  <Link
+                  href="/admin/pedidos4"
+                  className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
+                >
+                  <img width={50} height={50}
+                    className="pl-[4px]"
+                    src="/img/sidebar/icon-pedidos.png"
+                    alt=""
+                  />
+                  Pedidos 4
+                </Link>
+
+
+                </Link>
+
+                <Link
                   href="/admin/agregarSaldo"
                   className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
                 >
