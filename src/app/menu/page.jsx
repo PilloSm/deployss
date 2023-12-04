@@ -4,7 +4,6 @@ import axios from "axios";
 import CardCocina from "@/components/CardCocina";
 export default function YourComponent() {
   const [menuData, setMenuData] = useState(null);
-  const [selectedType, setSelectedType] = useState(null);
 
   useEffect(() => {
     const fetchMenuData = async () => {
@@ -18,34 +17,11 @@ export default function YourComponent() {
     fetchMenuData();
   }, []);
 
-  const handleTypeChange = (event) => {
-    const type = event.target.value;
-    setSelectedType(type === "all" ? null : type);
-  };
-
-  const filteredMenuData = menuData
-    ? selectedType
-      ? menuData.filter((item) => item.tipo === selectedType)
-      : menuData
-    : [];
-
   return (
     <form className="bg-white flex flex-col items-center justify-center w-full overflow-hidden min-h-screen">
       <div className="w-full max-w-screen-2xl h-full flex flex-wrap justify-around bg-white relative">
         <div className="absolute top-4 md:top-8 lg:top-12 left-1/2 transform -translate-x-1/2 font-nunito font-normal text-black text-4xl md:text-5xl lg:text-6xl text-center leading-normal tracking-normal">
           Menú
-        </div>
-        <div className="flex mt-4 mb-8">
-          <select
-            className="p-2 border border-gray-300 rounded"
-            value={selectedType || "all"}
-            onChange={handleTypeChange}
-          >
-            <option value="all">Todos</option>
-            <option value={1}>Del dia</option>
-            <option value={2}>Normal</option>
-            <option value={3}>Empaquetada</option>
-          </select>
         </div>
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
           {menuData ? (
