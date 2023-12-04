@@ -40,8 +40,6 @@ function Pedidos() {
         </div>
 
 
-
-
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
         {data1.map((detalle) => (
             <CardPedidos

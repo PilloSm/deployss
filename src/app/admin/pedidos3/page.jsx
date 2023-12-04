@@ -39,54 +39,9 @@ function Pedidos() {
           <div className="absolute text-[36px]">Pedidos</div>
         </div>
 
-        <div className="absolute w-full md:w-[431px] top-[202px] left-[50%] md:left-[572px] font-nunito font-normal text-black text-[60px] text-center leading-normal tracking-normal"></div>
 
-        <div className="relative w-full md:w-[6000px] h-[480px] flex flex-nowrap overflow-scroll justify-start overflow-x-scroll overflow-y-hidden">
-          {data1.map((detalle) => (
-            <CardPedidos
-              key={detalle.id_pedido} // Agrega una clave única para cada elemento en el array
-              id_pedido={detalle.id_pedido}
-              nombres_comidas={detalle.nombres_comidas}
-              cantidades_detalles={detalle.cantidades_detalles}
-              id_cuenta={detalle.id_cuenta}
-              estado_siguiente_nombre={detalle.estado_siguiente_nombre}
-              estado_actual_nombre={detalle.estado_actual_nombre}
-              estado_actual_id={detalle.estado_actual_id}
-            />
-          ))}
-        </div>
-        <div className="absolute w-[431px] top-[820px] left-[570px] font-nunito font-normal text-black text-[64px] text-center leading-normal tracking-normal"></div>
-
-        <div className="flex relative w-[6000px] h-[480px] flex flex-nowrap overflow-scroll justify-start overflow-x-scroll overflow-y-hidden">
-          {data2.map((detalle) => {
-            <CardPedidos
-              key={detalle.id_pedido}
-              nombres_comidas={detalle.nombres_comidas}
-              cantidades_detalles={detalle.cantidades_detalles}
-              id_cuenta={detalle.id_cuenta}
-              estado_siguiente_nombre={detalle.estado_siguiente_nombre}
-            />;
-          })}
-        </div>
-
-        <div className="absolute w-full md:w-[431px] top-[1420px] left-[50%] md:left-[570px] font-nunito font-normal text-black text-[64px] text-center leading-normal tracking-normal"></div>
-
-        <div className="relative w-[6000px] h-[480px] flex flex-nowrap overflow-scroll justify-start overflow-x-scroll overflow-y-hidden">
-          {data3.map((detalle) => {
-            <CardPedidos
-              key={detalle.id_pedido}
-              nombres_comidas={detalle.nombres_comidas}
-              cantidades_detalles={detalle.cantidades_detalles}
-              id_cuenta={detalle.id_cuenta}
-              estado_siguiente_nombre={detalle.estado_siguiente_nombre}
-            />;
-          })}
-        </div>
-
-        <div className="absolute w-full md:w-[431px] top-[2120px] left-[50%] md:left-[570px] font-nunito font-normal text-black text-[64px] text-center leading-normal tracking-normal"></div>
-
-        <div className="relative w-[6000px] h-[480px] flex flex-nowrap overflow-scroll justify-start overflow-x-scroll overflow-y-hidden">
-          {data4.map((detalle) => {
+        <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
+        {data3.map((detalle) => {
             <CardPedidos
               key={detalle.id_pedido}
               nombres_comidas={detalle.nombres_comidas}
