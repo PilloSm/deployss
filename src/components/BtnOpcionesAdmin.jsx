@@ -60,8 +60,9 @@ const BtnOpcionesAdmin = () => {
                     alt=""
                   />
                   Pedidos 3
+                </Link>
 
-                  <Link
+                <Link
                   href="/admin/pedidos4"
                   className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
                 >
@@ -71,9 +72,6 @@ const BtnOpcionesAdmin = () => {
                     alt=""
                   />
                   Pedidos 4
-                </Link>
-
-
                 </Link>
 
                 <Link
