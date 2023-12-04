@@ -75,6 +75,7 @@ export default function Ingredientes() {
     <div className="bg-white relative p-8 lg:p-16 xl:p-20 2xl:p-24 rounded-[50px] shadow-lg flex flex-col items-center">
       <div className="font-nunito font-normal text-black text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-center leading-normal tracking-normal mb-8">
         Crear Ingrediente
+        <br />
       </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-6">
