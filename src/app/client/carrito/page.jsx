@@ -4,6 +4,7 @@ import BtnOpciones from "../../../components/BtnOpciones";
 import { useSession } from "next-auth/react";
 import BtonPedir from "@/components/btonPedis";
 import Image from "next/image";
+import Link from "next/link";
 function Carrito() {
   const { data: session, update } = useSession();
   const carrito = session.user.carrito;
@@ -85,7 +86,7 @@ function Carrito() {
         </div>
 
         <div className="w-[893px] h-[88px] top-[743px] left-[567px]">
-          <Link href="/client/informacion?borrar=si" >
+          <Link href="/client/informacion?borrar=si">
             <BtonPedir
               onClick={() => {
                 if (session.user.saldo < session.user.carrito.total) {

@@ -17,7 +17,7 @@ export default function CardPedidos({
   const router = useRouter();
   const handleEditar = async (e) => {
     e.preventDefault();
-    const res = await axios.put(
+    const res = await axios.post(
       `/api/apiCafeteria/cambiarEstadoPedido/${id_pedido}`,
       { estado: estado_actual_id }
     );
