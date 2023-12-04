@@ -175,7 +175,7 @@ function AlimentoForm() {
           placeholder="Nombre"
           onChange={handleChange}
           value={comidaN.nombre}
-          className="shadow appearance-none border rounded w-full py-2 px-3 flex flex-row"
+          className="shadow text-black appearance-none border rounded w-full py-2 px-3 flex flex-row"
           autoFocus
         />
         <br />
@@ -191,7 +191,7 @@ function AlimentoForm() {
           placeholder="Descripción"
           onChange={handleChange}
           value={comidaN.descripcion}
-          className="shadow appearance-none border rounded w-full py-2 px-3 flex flex-row resize-none"
+          className="shadow text-black appearance-none border rounded w-full py-2 px-3 flex flex-row resize-none"
         />
         <br />
         <label
@@ -206,7 +206,7 @@ function AlimentoForm() {
           placeholder="Precio"
           onChange={handleChange}
           value={comidaN.precio}
-          className="shadow appearance-none border rounded w-full py-2 px-3"
+          className="shadow text-black appearance-none border rounded w-full py-2 px-3"
         />
         <br />
         <div>
@@ -214,7 +214,7 @@ function AlimentoForm() {
           <label>
             Número de Ingredientes:
             <input
-              className="shadow appearance-none border rounded ml-2"
+              className="shadow text-black appearance-none border rounded ml-2"
               type="number"
               min={1}
               value={numeroIteraciones}
@@ -258,7 +258,7 @@ function AlimentoForm() {
               <label className="mb-4">
                 Cantidad:
                 <input
-                  className="shadow appearance-none border rounded ml-2"
+                  className="shadow text-black appearance-none border rounded ml-2"
                   type="number"
                   name={`cantidad-${index}`} // Nombre único para cada input
                   min={1}
@@ -308,7 +308,7 @@ function AlimentoForm() {
         <input
           type="file"
           accept="img/*"
-          className="shadow appearance-none border rounded w-full py-2 px-3 mb-2"
+          className="shadow text-black appearance-none border rounded w-full py-2 px-3 mb-2"
           onChange={(e) => {
             setFile(e.target.files[0]);
           }}
