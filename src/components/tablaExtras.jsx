@@ -38,7 +38,7 @@ export default function TablaExtras() {
         </th>
       </tr>
     </thead>
-    <tbody>
+    <tbody className="text-black">
       {extras.map((extra) => (
         <tr key={extra.id}>
           <td className="border px-3 py-2">{extra.nombre_ingrediente}</td>
