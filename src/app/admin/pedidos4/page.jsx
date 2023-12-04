@@ -26,6 +26,7 @@ function Pedidos() {
 
   useEffect(() => {
     fetchData();
+    console.log(data4);
 
     const interval = setInterval(() => {
       fetchData();
@@ -40,9 +41,8 @@ function Pedidos() {
           <div className="absolute text-[36px]">Pedidos</div>
         </div>
 
-
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
-        {data4.map((detalle) => {
+          {data4.map((detalle) => {
             <CardPedidos
               key={detalle.id_pedido}
               nombres_comidas={detalle.nombres_comidas}

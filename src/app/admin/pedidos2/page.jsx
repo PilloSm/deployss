@@ -26,7 +26,7 @@ function Pedidos() {
 
   useEffect(() => {
     fetchData();
-
+    console.log(data2)
     const interval = setInterval(() => {
       fetchData();
     }, 60 * 1000);
