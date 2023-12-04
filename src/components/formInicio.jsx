@@ -65,7 +65,7 @@ export default function FormInicio() {
             <div className="flex bg-red-400 align-baseline">{error}</div>
           )}
 
-          <div className="flex flex-row justify-center p-2 border-2 rounded-md border-[#25a18ee6] items-center">
+          <div className="flex flex-row justify-center p-2 border-2 rounded-md text-black border-[#25a18ee6] items-center">
             <Mail size={32} />
             <input
               type="email"
@@ -76,7 +76,7 @@ export default function FormInicio() {
               onChange={handleChange}
             />
           </div>
-          <div className="flex flex-row mt-5 justify-center p-2 border-2 rounded-md border-[#25a18ee6] items-center">
+          <div className="flex flex-row mt-5 justify-center p-2 border-2 rounded-md text-black border-[#25a18ee6] items-center">
             <Lock size={32} />
             <input
               type="password"
