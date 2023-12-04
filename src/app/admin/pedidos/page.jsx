@@ -37,7 +37,7 @@ function Pedidos() {
     <div className="bg-white h-screen flex flex-row justify-center w-full">
       <div className="w-full max-w-[1440px] h-full flex flex-wrap justify-around bg-white relative">
         <div className="h-[120px] w-[120px] flex flex-col items-center justify-center font-nunito font-bold text-black text-center leading-normal tracking-normal">
-          <div className="absolute text-[36px]">Pedidos 2</div>
+          <div className="absolute text-[36px]">Pedidos</div>
         </div>
 
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
