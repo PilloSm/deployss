@@ -14,18 +14,19 @@ export default function CardPedidos({
 }) {
   const router = useRouter();
   const handleEditar = async (e) => {
+    e.preventDefault();
     const res = await axios.put(
       `/api/apiCafeteria/cambiarEstadoPedido/${id_pedido}`,
       { estado: estado_actual_id }
     );
-    router.push("/admin/pedidos");
+    window.location.reload();
   };
   const handleCancelar = async (e) => {
     const res = await axios.post(
       `/api/apiCafeteria/cambiarEstadoPedido/${id_pedido}`,
       { estado: 1 }
     );
-        router.push("/admin/pedidos");
+    window.location.reload();
   };
   return (
     <div className="relative mx-2 w-[303px] h-[402px] top-[30px]">
@@ -40,12 +41,11 @@ export default function CardPedidos({
             Usuario: {id_cuenta}
           </p>
         </div>
-        <button
-          onClick={handleEditar}
-          className="absolute w-[120px] h-[100px] bottom-[20px] left-[10px] bg-[#25a18ee6] rounded-[20px] border-none cursor-pointer leading-normal text-center flex items-center justify-center text-white text-[16px]"
-        >
-          <div className="pedir">{estado_siguiente_nombre}</div>
-        </button>
+        <form onSubmit={handleEditar}>
+          <button className="absolute w-[120px] h-[100px] bottom-[20px] left-[10px] bg-[#25a18ee6] rounded-[20px] border-none cursor-pointer leading-normal text-center flex items-center justify-center text-white text-[16px]">
+            <div className="pedir">{estado_siguiente_nombre}</div>
+          </button>
+        </form>
         {estado_actual_nombre == "pedido" ? (
           <button
             onClick={handleCancelar}
