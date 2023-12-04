@@ -34,7 +34,7 @@ function Pedidos() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="bg-white flex flex-row justify-center w-full">
+    <div className="bg-white h-full flex flex-row justify-center w-full">
       <div className="w-full max-w-[1440px] h-full flex flex-wrap justify-around bg-white relative">
         <div className="h-[120px] w-[120px] flex flex-col items-center justify-center font-nunito font-bold text-black text-center leading-normal tracking-normal">
           <div className="absolute text-[36px]">Pedidos 2</div>
