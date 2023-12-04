@@ -52,9 +52,9 @@ function AgregarSaldoAdmin() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-bg-[#25a18ee6]">
-  
+  <div className="bg-white w-[600px] h-[500px] shadow-lg rounded-[50px] relative">
 
-    <div className="bg-white absolute w-[600px] h-[500px] top-[80px] left-[504px] shadow-lg rounded-[50px] font-nunito">
+    <div className="bg-white absolute w-[600px] h-[500px] shadow-lg rounded-[50px] font-nunito">
       <div className="absolute w-[431px] top-[20px] left-[70px] text-4xl font-bold text-center leading-normal tracking-normal">
         Agregar Saldo
       </div>
@@ -95,6 +95,7 @@ function AgregarSaldoAdmin() {
 
       </form>
     </div>
+  </div>
 </div>
   );
 }
