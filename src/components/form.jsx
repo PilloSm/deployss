@@ -83,7 +83,7 @@ export default function Registrar() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="w-full bg-cl-1 bg-repeat h-screen flex justify-center items-center ">
+      <div className="w-full bg-cl-1 bg-gradient-to-r from-gray-300 via-gray-400 to-white p-8 h-screen flex justify-center items-center ">
         <div className="p-5 bg-white m-10 border-2 border-[#25a18ee6] rounded-md lg:w-3/12 flex flex-col items-center">
           <div className="text-2xl text-[#25a18ee6] font-semibold ">
             Registro
