@@ -32,7 +32,7 @@ function Carrito() {
                 </th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="text-black">
               {carrito.comidas.map((item) => (
                 <>
                   <tr>
