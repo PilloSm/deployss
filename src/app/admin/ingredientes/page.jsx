@@ -135,10 +135,8 @@ export default function Ingredientes() {
             />
           </div>
   
-          <button className="w-[438px] h-[77px] bg-[#25a18ee6] rounded-full border-none cursor-pointer">
-            <div className="w-[338px] h-[10px] font-poppins font-bold text-white text-[24px] text-center leading-[20px]">
+          <button className="text-4xl font-bold text-center mb-8">
               Crear Ingrediente
-            </div>
           </button>
         </form>
       </div>
