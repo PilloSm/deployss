@@ -43,7 +43,6 @@ function Pedidos() {
 
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
         {data3.map((detalle) => {
-            <Link href={"/admin/pedidos4"}>
             <CardPedidos
               key={detalle.id_pedido}
               nombres_comidas={detalle.nombres_comidas}
@@ -51,7 +50,6 @@ function Pedidos() {
               id_cuenta={detalle.id_cuenta}
               estado_siguiente_nombre={detalle.estado_siguiente_nombre}
             />;
-            </Link>
           })}
         </div>
       </div>
