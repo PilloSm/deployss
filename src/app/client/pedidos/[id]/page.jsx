@@ -8,7 +8,7 @@ export default function pagina ({ params }) {
     Historial de Pedidos
   </div>
   <ValUsu params={params.id}>
-    <TablaPedidos id_cuenta={params.id} />;
+    <TablaPedidos id_cuenta={params.id} />
   </ValUsu>
 </div>
   );
