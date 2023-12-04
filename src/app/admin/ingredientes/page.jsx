@@ -136,7 +136,7 @@ export default function Ingredientes() {
           />
         </div>
 
-        <button className="w-[438px] h-[77px] bg-[#25a18ee6] rounded-full border-none cursor-pointer">
+        <button className="w-[438px] h-[47px] bg-[#25a18ee6] rounded-full border-none cursor-pointer">
           <div className="h-[20px] font-poppins font-bold text-white text-[24px] text-center leading-[20px]">
             Crear Ingrediente
           </div>
