@@ -205,9 +205,9 @@ function AlimentoForm() {
           className="shadow text-black appearance-none border rounded w-full py-2 px-3"
         />
         <br />
-        <div>
+        <div className="text-black">
           <br />
-          <label>
+          <label className="text-black">
             Número de Ingredientes:
             <input
               className="shadow text-black appearance-none border rounded ml-2"
