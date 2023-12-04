@@ -78,8 +78,8 @@ export default function Ingredientes() {
         <br />
       </div>
 
-      <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-6">
-        <div className="flex flex-col items-center space-y-4">
+      <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-6 mb-8">
+        <div className="flex flex-col items-center space-y-2">
           <label htmlFor="nombre" className="text-[#09090999] text-[16px] mb-1">
             Nombre
           </label>
@@ -92,7 +92,7 @@ export default function Ingredientes() {
           />
         </div>
 
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col items-center space-y-2">
           <label htmlFor="unidad" className="text-[#09090999] text-[16px] mb-1">
             Unidad
           </label>
@@ -110,7 +110,7 @@ export default function Ingredientes() {
           </select>
         </div>
 
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col items-center space-y-2">
           <label htmlFor="cantidad" className="text-[#09090999] text-[16px] mb-1">
             Cantidad
           </label>
@@ -123,7 +123,7 @@ export default function Ingredientes() {
           />
         </div>
 
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col items-center space-y-2">
           <label htmlFor="precio" className="text-[#09090999] text-[16px] mb-1">
             Precio
           </label>
@@ -136,8 +136,8 @@ export default function Ingredientes() {
           />
         </div>
 
-        <button className="w-[438px] h-[50px] bg-[#25a18ee6] rounded-full border-none cursor-pointer">
-          <div className="h-[20px] font-poppins font-bold text-white text-[18px] text-center leading-[20px]">
+        <button className="w-[438px] h-[57px] bg-[#25a18ee6] rounded-full border-none cursor-pointer mb-12">
+          <div className="h-[20px] font-poppins font-bold text-white text-[14px] text-center leading-[20px]">
             Crear Ingrediente
           </div>
         </button>
