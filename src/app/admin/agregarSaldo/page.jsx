@@ -67,7 +67,7 @@ function AgregarSaldoAdmin() {
 
         <div className="absolute w-[450px] h-[48px] top-[160px] left-[60px] bg-white border border-[#797979] items-center">
           <input
-            className="absolute h-[40px] text-[40px] w-[120px] left-[10px] block mb-2 text-sm font-medium  text-gray-900 dark:text-black outline-none"
+            className="absolute h-[40px] text-[40px] w-[400px] left-[10px] block mb-2 text-sm font-medium  text-gray-900 dark:text-black outline-none"
             placeholder="Correo electronico"
             name="id"
             onChange={handleChange}
