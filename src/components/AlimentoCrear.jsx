@@ -115,7 +115,7 @@ function AlimentoForm() {
       return;
     }
     const r = comidaN.tipo.find((tipo) => {
-      console.log(datos.tipo)
+      console.log(datos.tipo);
       tipo.id_tipos === datos.tipo;
     });
     if (!comidaN.tipo.find((tipo) => tipo.id_tipos == datos.tipo)) {
@@ -136,18 +136,14 @@ function AlimentoForm() {
     formData.append("tipos", datos.tipo);
 
     try {
-      const resultado = await axios.post(
-        `/api/apiCafeteria/Comida`,
-        formData,
-        {
-          headers: {
-            "Content-type": "multipart/form-data",
-          },
-        }
-      );
+      const resultado = await axios.post(`/api/apiCafeteria/Comida`, formData, {
+        headers: {
+          "Content-type": "multipart/form-data",
+        },
+      });
       form.current.reset();
       router.refresh();
-      router.push("/admin/pedidos");
+      window.location.reload();
     } catch (error) {
       console.error("Error al enviar la comida:", error);
     }
@@ -300,9 +296,7 @@ function AlimentoForm() {
           <br />
         </select>
         <br />
-        <label
-          className="block text-gray-700 text-sm font-bold mb-2 mt-4"
-        >
+        <label className="block text-gray-700 text-sm font-bold mb-2 mt-4">
           Imagen del Producto:
         </label>
         <input
