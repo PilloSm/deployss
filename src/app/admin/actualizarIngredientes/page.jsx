@@ -40,7 +40,7 @@ export default function Actualizar() {
   return (
     <>
       <div className="flex bg-gradient-to-r from-gray-300 via-gray-400 to-white p-8 items-center justify-center h-screen">
-        <div className="w-[600px] bg-white shadow-lg rounded-[50px] p-8">
+        <div className="w-[600px] text-black bg-white shadow-lg rounded-[50px] p-8">
           <h1 className="text-center text-2xl font-nunito font-bold text-black mb-2">
             Actualizar Ingredientes
           </h1>
@@ -60,7 +60,7 @@ export default function Actualizar() {
                 <p className="text-lg font-nunito font-semibold">
                   {ingrediente.nombre}
                 </p>
-                <p className="text-base font-nunito">Cantidad:</p>
+                <p className="text-base font-nunito text-black">Cantidad:</p>
                 <div className="flex items-center">
                   <input
                     type="number"
