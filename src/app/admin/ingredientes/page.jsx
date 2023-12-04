@@ -71,76 +71,78 @@ export default function Ingredientes() {
 
   return (
     <div className="flex justify-center items-center h-screen">
-  <div className="w-full lg:max-w-[80%] xl:max-w-[60%] 2xl:max-w-[50%]">
-    <div className="bg-white relative h-[800px]  p-8 lg:p-16 xl:p-20 2xl:p-24 rounded-[50px] shadow-lg">
-      <div className="font-nunito font-normal text-black text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-center leading-normal tracking-normal mb-8">
-        Crear Ingrediente
-      </div>
-
-          <form onSubmit={handleSubmit}>
-            <div className="absolute w-[219px] top-[121px] left-[63px] font-poppins font-normal text-[#09090999] text-[16px] leading-[24px] tracking-[0.15px]">
-              Nombre
-            </div>
-            <div className="absolute w-[219px] top-[241px] left-[63px] font-poppins font-normal text-[#09090999] text-[16px] leading-[24px] tracking-[0.15px]">
-              Cantidad
-            </div>
-            <div className="absolute w-[219px] top-[371px] left-[63px] font-poppins font-normal text-[#09090999] text-[16px] leading-[24px] tracking-[0.15px]">
-              Precio
-            </div>
-            <div className="absolute w-[219px] top-[491px] left-[63px] font-poppins font-normal text-[#09090999] text-[16px] leading-[24px] tracking-[0.15px]">
-              Unidad
-            </div>
-
-            <div className="absolute w-[450px] h-[48px] top-[152px] left-[85px] bg-white border border-[#797979]">
-              <input
-                name="nombre"
-                placeholder="Nombre"
-                className="absolute w-[438px] h-[35px] top-[5px] left-[5px] font-nunito font-normal text-black bg-[white] text-[24px] leading-normal tracking-normal border-none outline-none"
-                onChange={handleCahnge}
-              />
-            </div>
-
-            <div className="absolute w-[450px] h-[48px] top-[273px] left-[85px] bg-white border border-[#797979]">
-              <select
-                name="unidad"
-                className="absolute w-[438px] h-[35px] top-[260px] left-[0px] font-nunito font-normal bg-[white] text-black text-[24px] leading-normal tracking-normal border-none outline-none"
-                onChange={handleCahnge}
-              >
-                <option value="">Seleccionar Unidad</option>
-                {unidades.map((unidad) => (
-                  <option key={unidad.id_unidad} value={unidad.id_unidad}>
-                    {unidad.nombre}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <div>
-              <input
-                className="absolute w-[438px] h-[35px] top-[280px] left-[90px] font-nunito font-normal text-black bg-[white] text-[24px] leading-normal tracking-normal border-none outline-none"
-                name="cantidad"
-                placeholder="Cantidad"
-                type="number"
-                onChange={handleCahnge}
-              />
-            </div>
-            <div className="absolute w-[450px] h-[48px] top-[402px] left-[85px] bg-white border border-[#797979]">
-              <input
-                className="absolute w-[438px] h-[35px] top-[5px] left-[5px] font-nunito font-normal text-black bg-[white] text-[24px] leading-normal tracking-normal border-none outline-none"
-                name="precio"
-                placeholder="Precio"
-                type="number"
-                onChange={handleCahnge}
-              />
-            </div>
-            <button className="absolute w-[450px] h-[77px] top-[700px] left-[70px] bg-[#25a18ee6] rounded-full border-none cursor-pointer">
-              <div className="absolute w-[338px] h-[20px] top-[28px] left-[56px] font-poppins font-bold text-white text-[24px] text-center leading-[20px]">
-                Crear Ingrediente
-              </div>
-            </button>
-          </form>
+    <div className="w-full lg:max-w-[80%] xl:max-w-[60%] 2xl:max-w-[50%]">
+      <div className="bg-white relative p-8 lg:p-16 xl:p-20 2xl:p-24 rounded-[50px] shadow-lg">
+        <div className="font-nunito font-normal text-black text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-center leading-normal tracking-normal mb-8">
+          Crear Ingrediente
         </div>
+  
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="flex flex-col">
+            <label htmlFor="nombre" className="text-[#09090999] text-[16px] mb-1">
+              Nombre
+            </label>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+              className="w-[438px] h-[35px] font-nunito font-normal text-black bg-[white] text-[24px] leading-normal tracking-normal border border-[#797979] outline-none px-3"
+              onChange={handleCahnge}
+            />
+          </div>
+  
+          <div className="flex flex-col">
+            <label htmlFor="unidad" className="text-[#09090999] text-[16px] mb-1">
+              Unidad
+            </label>
+            <select
+              name="unidad"
+              className="w-[438px] h-[35px] font-nunito font-normal bg-[white] text-black text-[24px] leading-normal tracking-normal border border-[#797979] outline-none px-3"
+              onChange={handleCahnge}
+            >
+              <option value="">Seleccionar Unidad</option>
+              {unidades.map((unidad) => (
+                <option key={unidad.id_unidad} value={unidad.id_unidad}>
+                  {unidad.nombre}
+                </option>
+              ))}
+            </select>
+          </div>
+  
+          <div className="flex flex-col">
+            <label htmlFor="cantidad" className="text-[#09090999] text-[16px] mb-1">
+              Cantidad
+            </label>
+            <input
+              type="number"
+              name="cantidad"
+              placeholder="Cantidad"
+              className="w-[438px] h-[35px] font-nunito font-normal text-black bg-[white] text-[24px] leading-normal tracking-normal border border-[#797979] outline-none px-3"
+              onChange={handleCahnge}
+            />
+          </div>
+  
+          <div className="flex flex-col">
+            <label htmlFor="precio" className="text-[#09090999] text-[16px] mb-1">
+              Precio
+            </label>
+            <input
+              type="number"
+              name="precio"
+              placeholder="Precio"
+              className="w-[438px] h-[35px] font-nunito font-normal text-black bg-[white] text-[24px] leading-normal tracking-normal border border-[#797979] outline-none px-3"
+              onChange={handleCahnge}
+            />
+          </div>
+  
+          <button className="w-[438px] h-[77px] bg-[#25a18ee6] rounded-full border-none cursor-pointer">
+            <div className="w-[338px] h-[20px] font-poppins font-bold text-white text-[24px] text-center leading-[20px]">
+              Crear Ingrediente
+            </div>
+          </button>
+        </form>
       </div>
     </div>
+  </div>
   );
 }
