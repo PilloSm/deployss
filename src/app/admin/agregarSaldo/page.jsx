@@ -18,13 +18,12 @@ function AgregarSaldoAdmin() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const confirmacion = awaitSwal.fire({
+    const confirmacion = await Swal.fire({
       title: "¿Son correctos los datos?",
       icon: "question",
       html: `
-        <p>Dato 1: ${datos.id}</p>
-        <p>Dato 2: ${datos.saldoMas}</p>
-        <p>O cualquier otro dato que quieras mostrar...</p>
+        <p>Correo: ${datos.id}</p>
+        <p>Saldo ingresado: ${datos.saldoMas}</p>
       `,
       showCancelButton: true,
       confirmButtonText: "Sí",

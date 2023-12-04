@@ -20,7 +20,7 @@ export default function FormInicio() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!captcha) {
+    if (captcha) {
       alert("Ingrese el captcha");
       return;
     }
