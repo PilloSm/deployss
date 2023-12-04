@@ -41,16 +41,16 @@ function Pedidos() {
         </div>
 
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
-          {data1.map((detalle) => (
+          {data1.map((item, index) => (
             <CardPedidos
-              key={detalle.id_pedido} // Agrega una clave única para cada elemento en el array
-              id_pedido={detalle.id_pedido}
-              nombres_comidas={detalle.nombres_comidas}
-              cantidades_detalles={detalle.cantidades_detalles}
-              id_cuenta={detalle.id_cuenta}
-              estado_siguiente_nombre={detalle.estado_siguiente_nombre}
-              estado_actual_nombre={detalle.estado_actual_nombre}
-              estado_actual_id={detalle.estado_actual_id}
+              key={index} // Agrega una clave única para cada elemento en el array
+              id_pedido={item.id_pedido}
+              nombres_comidas={item.nombres_comidas}
+              cantidades_items={item.cantidades_items}
+              id_cuenta={item.id_cuenta}
+              estado_siguiente_nombre={item.estado_siguiente_nombre}
+              estado_actual_nombre={item.estado_actual_nombre}
+              estado_actual_id={item.estado_actual_id}
             />
           ))}
         </div>
