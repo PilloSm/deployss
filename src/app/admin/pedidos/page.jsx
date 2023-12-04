@@ -41,9 +41,11 @@ function Pedidos() {
               nombres_comidas={item.nombres_comidas}
               cantidades_items={item.cantidades_items}
               id_cuenta={item.nombre_usuario}
+              nombre={item.id_cuenta}
               estado_siguiente_nombre={item.estado_siguiente_nombre}
               estado_actual_nombre={item.estado_actual_nombre}
               estado_actual_id={item.estado_actual_id}
+              saldo={item.total}
             />
           ))}
         </div>

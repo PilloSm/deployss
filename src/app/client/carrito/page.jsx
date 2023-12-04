@@ -85,19 +85,21 @@ function Carrito() {
         </div>
 
         <div className="w-[893px] h-[88px] top-[743px] left-[567px]">
-          <BtonPedir
-            onClick={() => {
-              if (session.user.saldo < session.user.carrito.total) {
-                setError("sa");
-                return;
-              } else {
-                handleE(item.id_comida);
-              }
-            }}
-            saldo={session.user.saldo}
-            carrito={session.user.carrito}
-            id_cuenta={session.user.id_cuenta}
-          />
+          <Link href="/client/informacion?borrar=si" >
+            <BtonPedir
+              onClick={() => {
+                if (session.user.saldo < session.user.carrito.total) {
+                  setError("sa");
+                  return;
+                } else {
+                  handleE(item.id_comida);
+                }
+              }}
+              saldo={session.user.saldo}
+              carrito={session.user.carrito}
+              id_cuenta={session.user.id_cuenta}
+            />
+          </Link>
         </div>
       </div>
     </div>
