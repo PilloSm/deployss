@@ -56,7 +56,7 @@ function AgregarSaldoAdmin() {
     <div className="flex bg-gradient-to-r from-gray-300 via-gray-400 to-white p-8 items-center justify-center min-h-screen bg-bg-[#25a18ee6]">
       <div className="bg-white w-[600px] h-[500px] shadow-lg rounded-[50px] relative">
         <div className="bg-white absolute w-[600px] h-[500px] shadow-lg rounded-[50px] font-nunito">
-          <div className="absolute w-[431px] top-[20px] left-[70px] text-4xl font-bold text-center leading-normal tracking-normal">
+          <div className="absolute text-black w-[431px] top-[20px] left-[70px] text-4xl font-bold text-center leading-normal tracking-normal">
             Agregar Saldo
           </div>
 
