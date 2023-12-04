@@ -87,7 +87,7 @@ export default function Ingredientes() {
             type="text"
             name="nombre"
             placeholder="Nombre"
-            className="w-[438px] h-[35px] font-nunito font-normal text-black bg-[white] text-[24px] leading-normal tracking-normal border border-[#797979] outline-none px-3"
+            className="w-[438px] h-[35px] text-black font-nunito font-normal text-black bg-[white] text-[24px] leading-normal tracking-normal border border-[#797979] outline-none px-3"
             onChange={handleCahnge}
           />
         </div>
@@ -118,7 +118,7 @@ export default function Ingredientes() {
             type="number"
             name="cantidad"
             placeholder="Cantidad"
-            className="w-[438px] h-[35px] font-nunito font-normal text-black bg-[white] text-[24px] leading-normal tracking-normal border border-[#797979] outline-none px-3"
+            className="w-[438px] h-[35px] text-black font-nunito font-normal text-black bg-[white] text-[24px] leading-normal tracking-normal border border-[#797979] outline-none px-3"
             onChange={handleCahnge}
           />
         </div>
@@ -131,7 +131,7 @@ export default function Ingredientes() {
             type="number"
             name="precio"
             placeholder="Precio"
-            className="w-[438px] h-[35px] font-nunito font-normal text-black bg-[white] text-[24px] leading-normal tracking-normal border border-[#797979] outline-none px-3"
+            className="w-[438px] h-[35px] text-black font-nunito font-normal text-black bg-[white] text-[24px] leading-normal tracking-normal border border-[#797979] outline-none px-3"
             onChange={handleCahnge}
           />
         </div>
