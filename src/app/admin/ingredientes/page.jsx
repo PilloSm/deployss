@@ -72,14 +72,14 @@ export default function Ingredientes() {
   return (
     <div className="flex justify-center items-center h-screen">
   <div className="w-full lg:max-w-[80%] xl:max-w-[60%] 2xl:max-w-[50%]">
-    <div className="bg-white relative p-8 lg:p-16 xl:p-20 2xl:p-24 rounded-[50px] shadow-lg flex flex-col items-center">
+    <div className="bg-white relative p-8 lg:p-16 xl:p-20 2xl:p-24 rounded-[50px] shadow-lg flex flex-col items-center space-y-6">
       <div className="text-4xl font-bold text-center leading-normal tracking-normal">
         Crear Ingrediente
         <br />
       </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-6">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center space-y-4">
           <label htmlFor="nombre" className="text-[#09090999] text-[16px] mb-1">
             Nombre
           </label>
@@ -92,7 +92,7 @@ export default function Ingredientes() {
           />
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center space-y-4">
           <label htmlFor="unidad" className="text-[#09090999] text-[16px] mb-1">
             Unidad
           </label>
@@ -110,7 +110,7 @@ export default function Ingredientes() {
           </select>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center space-y-4">
           <label htmlFor="cantidad" className="text-[#09090999] text-[16px] mb-1">
             Cantidad
           </label>
@@ -123,7 +123,7 @@ export default function Ingredientes() {
           />
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center space-y-4">
           <label htmlFor="precio" className="text-[#09090999] text-[16px] mb-1">
             Precio
           </label>
@@ -136,7 +136,7 @@ export default function Ingredientes() {
           />
         </div>
 
-        <button className="w-[438px] h-[77px] bg-[#25a18ee6] rounded-full border-none cursor-pointer items-center">
+        <button className="w-[438px] h-[77px] bg-[#25a18ee6] rounded-full border-none cursor-pointer">
           <div className="h-[20px] font-poppins font-bold text-white text-[24px] text-center leading-[20px]">
             Crear Ingrediente
           </div>
