@@ -152,7 +152,7 @@ function AlimentoForm() {
   return (
     <div className="absolute left-[400px] top-[60px] font-nunito">
       <h1 className="text-4xl text-black font-bold text-center mb-8">
-        Crear Nuevo Producto
+        Crear Nueva Comida
       </h1>
       <form
         className="bg-white shadow-md rounded-[20px] px-8 pt-6 pb-8 mb-4"
@@ -163,7 +163,7 @@ function AlimentoForm() {
           htmlFor="nombre"
           className="block text-gray-700 text-sm font-bold mb-2"
         >
-          Nombre del Producto:
+          Nombre de la comida:
         </label>
         <input
           name="nombre"
@@ -179,7 +179,7 @@ function AlimentoForm() {
           htmlFor="descripcion"
           className="block text-gray-700 text-sm font-bold mb-2 flex flex-row"
         >
-          Descripción del Producto:
+          Descripción de la comida:
         </label>
         <textarea
           name="descripcion"
@@ -194,7 +194,7 @@ function AlimentoForm() {
           htmlFor="precio"
           className="block text-gray-700 text-sm font-bold mb-2"
         >
-          Precio del Producto:
+          Precio de la comida:
         </label>
         <input
           name="precio"
