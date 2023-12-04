@@ -1,6 +1,7 @@
 "use client";
 import CardPedidos from "@/components/CardPedidos";
 import axios from "axios";
+import { Link } from "lucide-react";
 import { useState, useEffect } from "react";
 function Pedidos() {
   const [data1, setData1] = useState([]);
@@ -42,6 +43,7 @@ function Pedidos() {
 
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
         {data4.map((detalle) => {
+            <Link href="/admin/pedidos">
             <CardPedidos
               key={detalle.id_pedido}
               nombres_comidas={detalle.nombres_comidas}
@@ -49,6 +51,7 @@ function Pedidos() {
               id_cuenta={detalle.id_cuenta}
               estado_siguiente_nombre={detalle.estado_siguiente_nombre}
             />;
+            </Link>
           })}
         </div>
       </div>
