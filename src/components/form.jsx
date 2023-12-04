@@ -96,7 +96,7 @@ export default function Registrar() {
           <div className="flex flex-row justify-center p-2  border-2 rounded-md border-[#25a18ee6] items-center">
             <User size={32} />
             <input
-              className=" ml-2 border-none outline-none"
+              className="text-black ml-2 border-none outline-none"
               type="text"
               name="nombre"
               placeholder="Usuario"
@@ -107,7 +107,7 @@ export default function Registrar() {
           <div className="flex flex-row justify-center p-2 mt-5 border-2 rounded-md border-[#25a18ee6] items-center ">
             <Mail size={32} />
             <input
-              className=" ml-2 border-none outline-none"
+              className=" ml-2 text-black border-none outline-none"
               type="email"
               name="email"
               placeholder="Correo"
@@ -117,7 +117,7 @@ export default function Registrar() {
           <div className="flex flex-row justify-center p-2 mt-5 border-2 rounded-md border-[#25a18ee6] items-center">
             <Lock size={32} />
             <input
-              className="ml-2  border-none outline-none"
+              className="ml-2 text-black  border-none outline-none"
               type="password"
               name="password"
               placeholder="Contraseña"
@@ -127,7 +127,7 @@ export default function Registrar() {
           <div className="flex flex-row justify-center mt-5 p-2 border-2 rounded-md border-[#25a18ee6] items-center">
             <Lock size={32} />
             <input
-              className=" ml-2 border-none outline-none"
+              className=" ml-2 text-black border-none outline-none"
               type="password"
               name="password2"
               placeholder="Confirmar contraseña"

@@ -70,7 +70,7 @@ export default function FormInicio() {
             <input
               type="email"
               name="email"
-              className=" border-none outline-none ml-2"
+              className="text-black border-none outline-none ml-2"
               placeholder="Correo"
               required
               onChange={handleChange}
@@ -81,7 +81,7 @@ export default function FormInicio() {
             <input
               type="password"
               name="password"
-              className="  border-none ml-2 outline-none"
+              className="text-black border-none ml-2 outline-none"
               placeholder="Contraseña"
               required
               onChange={handleChange}
