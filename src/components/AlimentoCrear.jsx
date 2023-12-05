@@ -11,6 +11,7 @@ function AlimentoForm() {
     precio: 0,
     cantidad: 0,
     tipo: "",
+    tiempo_estimado: "",
   });
   const [datos, setDatos] = useState({
     tipo: [],
@@ -136,6 +137,15 @@ function AlimentoForm() {
           type="number"
         />
         <br />
+        <label className="text-black">Tiempo Estimado</label>
+        <input
+          className="shadow text-black appearance-none border rounded w-full py-2 px-3 flex flex-row"
+          autoFocus
+          onChange={handleChange}
+          name="tiempo_estimado"
+          type="text"
+        />
+        <br />
         <label
           htmlFor="precio"
           className="block text-gray-700 text-sm font-bold mb-2"
@@ -157,7 +167,6 @@ function AlimentoForm() {
         <br />
         <select className="text-black" name="tipo" onChange={handleChange}>
           <br />
-
           <option value="" className="text-black">
             Seleccionar tipo
           </option>

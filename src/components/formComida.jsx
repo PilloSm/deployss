@@ -60,9 +60,9 @@ export default function FormComida({ comidas }) {
       alert("dkjas");
       return;
     }
-    if(comida.cantidad > platillo.cantidad){
-      alert('sasda')
-      return
+    if (comida.cantidad > platillo.cantidad) {
+      alert("sasda");
+      return;
     }
     if (session) {
       const existingItemIndex = session.user.carrito.comidas.findIndex(
@@ -119,7 +119,7 @@ export default function FormComida({ comidas }) {
         $
       </p>
       <input
-        className="absolute w-[325px] top-[387px] left-[159px] font-nunito font-nunito font-bold text-black text-[64px] leading-normal tracking-normal bg-[white]"
+        className="absolute w-[325px] top-[387px] left-[159px] font-nunito font-nunito font-bold text-black text-[64px] leading-normal tracking-normal bg-[white] text-black"
         disabled
         name="precio"
         value={platillo.precio}
@@ -129,7 +129,7 @@ export default function FormComida({ comidas }) {
       <div className="absolute w-[274px] h-[84px] top-[452px] left-[583px] rounded-[10px]">
         <input
           type="number"
-          className="text-center text-[42px] absolute w-[274px] h-[84px] top-0 left-0 bg-white rounded-[10px] border-4 border-black"
+          className="text-center text-[42px] absolute w-[274px] h-[84px] top-0 left-0 bg-white rounded-[10px] border-4 text-black border-black"
           name="cantidad"
           placeholder="1"
           min={1}
