@@ -98,7 +98,7 @@ export default function Actualizar() {
                       }
                     }}
                   >
-                    Actualizar Ingrediente
+                    Actualizar Cantidad
                   </button>
                 </div>
               </div>
