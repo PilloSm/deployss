@@ -52,11 +52,7 @@ export default function Nosts({ id }) {
   }, [notis]);
   return (
     <div className="text-black">
-<<<<<<< HEAD
-      <table className="text-black">
-=======
       <table className="absolute text-center top-[160px] w-1/2 mt-5 border-collapse left-1/2 transform -translate-x-1/2">
->>>>>>> cdffcac6101ae815db132a6309d0adaa36e71477
         <thead>
           <tr>
             <th>ID Pedido</th>
