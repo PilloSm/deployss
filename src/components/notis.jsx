@@ -63,7 +63,7 @@ export default function Nosts({ id }) {
               <td>{noti.fecha}</td>
               <td>
                 <button onClick={() => markAsSeen(noti.id_pedido)}>
-                  Marcar como Visto
+                  Marcar como Visto ✔
                 </button>
               </td>
             </tr>
