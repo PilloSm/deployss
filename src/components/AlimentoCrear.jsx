@@ -52,6 +52,27 @@ function AlimentoForm() {
       return;
     }
     const r = datos.tipo.find((tipo) => {
+
+    if (!ingredientesSeleccionados.length > 0) {
+      setError("da");
+      alert("4");
+
+      return;
+    }
+    if (
+      !ingredientesSeleccionados.every(
+        (ingrediente) => ingrediente.id_ingrediente && ingrediente.cantidad
+      )
+    ) {
+      setError(
+        "Alguno de los ingredientes seleccionados tiene propiedades nulas."
+      );
+      alert("5");
+      alert('error en los ingredientes')
+
+      return;
+    }
+    const r = comidaN.tipo.find((tipo) => {
       console.log(datos.tipo);
       tipo.id_tipos === datos.tipo;
     });
@@ -78,8 +99,6 @@ function AlimentoForm() {
           "Content-type": "multipart/form-data",
         },
       });
-      form.current.reset();
-      router.refresh();
       window.location.reload();
     } catch (error) {
       console.log(error);
