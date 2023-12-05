@@ -40,10 +40,10 @@ export default function CardPedidos({
         <div className="w-[303px] h-[350px] top-[52px] bg-[#f4f5f6] rounded-[40px] shadow-md relative left-0 transition-transform transform hover:scale-110"></div>
         <div className="absolute w-[204px] top-[59px] left-[40px] font-nunito font-normal text-black text-[28px] text-center leading-normal tracking-normal">
           <p className="relative top-[20px] font-bold">{nombres_comidas}</p>
-          <p className="absolute left-[5px] w-[190px] top-[110px] text-left">
+          <p className="absolute left-[25px] w-[220px] top-[110px] text-left">
             Cantidad: {cantidades_detalles}
           </p>
-          <p className="absolute left-[5px] w-[190px] top-[160px] text-[20px] text-left">
+          <p className="absolute left-[25px] w-[220px] top-[160px] text-[20px] text-left">
             Usuario: {id_cuenta}
           </p>
         </div>
