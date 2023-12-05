@@ -146,7 +146,6 @@ function AlimentoForm() {
       });
       form.current.reset();
       router.refresh();
-      window.location.reload();
     } catch (error) {
       console.error("Error al enviar la comida:", error);
     }
