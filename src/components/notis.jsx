@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 
 export default function Nosts({ id }) {
   const [notis, setNotis] = useState([]);
-
+  const [estados, setEstados] = useState([]);
   const fetchData = async () => {
     try {
       const res = await axios.post(`/api/apiCliente/extras`, { id_cuenta: id });
-      setNotis(res.data);
+      setNotis(res.data.pedidos);
+      setEstados(res.data.datos);
     } catch (error) {
       console.log(error);
     }
@@ -20,6 +21,12 @@ export default function Nosts({ id }) {
       console.log(error);
     }
   };
+  const getEstadoNombre = (estado) => {
+    const estadoInfo = estado.find(
+      (estadoInfo) => estadoInfo.id_estado === estado
+    );
+    return estadoInfo ? estadoInfo.nombre_estado : "Estado Desconocido";
+  };
   useEffect(() => {
     fetchData();
 
@@ -30,11 +37,9 @@ export default function Nosts({ id }) {
     return () => clearInterval(interval);
   }, []);
 
-  // Utiliza useEffect para ver los cambios en el estado
   useEffect(() => {
     console.log("Estado actualizado:", notis);
-  }, [notis]); // Solo se activará cuando notis cambie
-
+  }, [notis]);
   return (
     <div className="text-black">
       <table>
@@ -51,8 +56,8 @@ export default function Nosts({ id }) {
           {notis.map((noti) => (
             <tr key={noti.id_pedido}>
               <td>{noti.id_pedido}</td>
-              <td>{noti.estado_anterior}</td>
-              <td>{noti.estado_actual}</td>
+              <td>{getEstadoNombre(noti.estado_anterior)}</td>
+              <td>{getEstadoNombre(noti.estado_actual)}</td>
               <td>{noti.fecha}</td>
               <td>
                 <button onClick={() => markAsSeen(noti.id_pedido)}>

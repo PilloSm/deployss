@@ -3,7 +3,7 @@ import axios from "axios";
 import { useRef, useState, useEffect } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { esNumero, soloLetras, soloLetrasDescripcion } from "@/libs/val";
-function AlimentoForm() {
+export default function AlimentoForm() {
   const [error, setError] = useState("");
   const [comidaN, setComidaN] = useState({
     nombre: "",
@@ -94,7 +94,7 @@ function AlimentoForm() {
     formData.append("tipos", comidaN.tipo);
     formData.append("tiempo_estimado", comidaN.tiempo_estimado);
     try {
-      const resultado = await axios.post(`/api/apiCafeteria/Comida`, formData, {
+      const resultado = axios.post(`/api/apiCafeteria/Comida`, formData, {
         headers: {
           "Content-type": "multipart/form-data",
         },
@@ -104,7 +104,7 @@ function AlimentoForm() {
       console.log(error);
       console.error("Error al enviar la comida:", error);
     }
-  };
+  })};
 
   return (
     <div className="absolute left-[400px] top-[60px] font-nunito">
@@ -236,5 +236,3 @@ function AlimentoForm() {
     </div>
   );
 }
-
-export default AlimentoForm;
