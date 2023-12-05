@@ -7,16 +7,8 @@ export default function Nosts({ id }) {
   const fetchData = async () => {
     try {
       const res = await axios.post(`/api/apiCliente/extras`, { id_cuenta: id });
-      console.log(res.data.estados);
-      const notisConNombres = res.data.pedidos.map((pedido, index) => ({
-        ...pedido,
-        estado_anterior: getEstadoNombre(
-          pedido.estado_anterior,
-          res.data.estados
-        ),
-        estado_actual: getEstadoNombre(pedido.estado_actual, res.data.estados),
-      }));
-      setNotis(notisConNombres);
+      
+      setNotis(res.data.pedidos);
     } catch (error) {
       console.log(error);
     }
