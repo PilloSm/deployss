@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -7,14 +7,19 @@ export default function Nosts({ id }) {
 
   const fetchData = async () => {
     try {
-      const res = await axios.put(`/api/apiCliente/extras`, { id_cuenta: id });
+      const res = await axios.post(`/api/apiCliente/extras`, { id_cuenta: id });
       setNotis(res.data);
-      // console.log(notis); // Esto no mostrará inmediatamente el cambio
     } catch (error) {
       console.log(error);
     }
   };
-
+  const markAsSeen = async (id_pedido) => {
+    try {
+      await axios.put(`/api/apiCliente/extras`, { id_pedido: id_pedido });
+    } catch (error) {
+      console.log(error);
+    }
+  };
   useEffect(() => {
     fetchData();
 
@@ -32,25 +37,32 @@ export default function Nosts({ id }) {
 
   return (
     <div className="text-black">
-      <h2>Notificaciones:</h2>
-      <ul>
-        {notis.map((noti) => (
-          <li key={noti.id_pedido}>
-            <strong>ID Pedido:</strong> {noti.id_pedido}
-            <br />
-            <strong>Estado Anterior:</strong> {noti.estado_anterior}
-            <br />
-            <strong>Estado Actual:</strong> {noti.estado_actual}
-            <br />
-            <strong>Fecha:</strong> {noti.fecha}
-            <br />
-            <strong>Estado Recibido:</strong> {noti.estado_recibido}
-            <br />
-            <strong>ID Cuenta:</strong> {noti.id_cuenta}
-            <br />
-          </li>
-        ))}
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>ID Pedido</th>
+            <th>Estado Anterior</th>
+            <th>Estado Actual</th>
+            <th>Fecha</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {notis.map((noti) => (
+            <tr key={noti.id_pedido}>
+              <td>{noti.id_pedido}</td>
+              <td>{noti.estado_anterior}</td>
+              <td>{noti.estado_actual}</td>
+              <td>{noti.fecha}</td>
+              <td>
+                <button onClick={() => markAsSeen(noti.id_pedido)}>
+                  Marcar como Visto
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }

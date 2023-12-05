@@ -1,7 +1,7 @@
 import { conn } from "@/libs/db";
 import { NextResponse } from "next/server";
 
-export async function PUT(req) {
+export async function POST(req) {
   try {
     const data = await req.json();
     console.log(data);
@@ -11,6 +11,20 @@ export async function PUT(req) {
     );
     console.log(res);
     return NextResponse.json(res[0]);
+  } catch (error) {
+    console.log(error);
+    return NextResponse.json({ error: error }, { status: 400 });
+  }
+}
+
+export async function PUT(req) {
+  try {
+    const data = await req.json();
+    const res = await conn.query(
+      "UPDATE registro_estados set estado_recibido=1 where id_pedido=?",
+      data.id_pedido
+    );
+    return NextResponse.json(rse[0]);
   } catch (error) {
     console.log(error);
     return NextResponse.json({ error: error }, { status: 400 });
