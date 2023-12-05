@@ -115,8 +115,12 @@ export default function FormComida({ comidas }) {
       <p className="absolute w-[595px] top-[101px] h-[250px] left-[115px] border border-black p-4 text-black rounded-[50px]">
         {platillo.descripcion}
       </p>
-      <p className="absolute w-[325px] top-[427px] left-[119px] font-nunito text-black">
-        <img src="https://i.ibb.co/hZGB6c6/icons8-tiempo-24.png" alt="Tiempo:" />
+
+      <p className="absolute w-[325px] top-[500px] left-[119px] font-nunito text-black">
+      <img src="https://i.ibb.co/hZGB6c6/icons8-tiempo-24.png" alt="Tiempo:" />
+      </p>
+      
+      <p className="absolute w-[325px] top-[487px] left-[149px] font-nunito text-black text-[30px]">
         {platillo.tiempo_estimado}
       </p>
 

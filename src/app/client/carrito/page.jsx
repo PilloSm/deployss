@@ -19,16 +19,16 @@ function Carrito() {
           <table className="absolute text-center top-[160px] w-1/2 mt-5 border-collapse left-1/2 transform -translate-x-1/2">
             <thead>
               <tr>
-                <th className="border border-gray-300 justify-center bg-[#25a18ee6] text-[white] text-center py-2 px-3">
+                <th className="border border-gray-300 justify-center text-[black] text-center py-2 px-3">
                   Producto
                 </th>
-                <th className="border border-gray-300 justify-center bg-[#25a18ee6] text-[white] text-center py-2 px-3">
+                <th className="border border-gray-300 justify-center text-black text-center py-2 px-3">
                   Cantidad
                 </th>
-                <th className="border border-gray-300 justify-center bg-[#25a18ee6] text-[white] text-center py-2 px-3">
+                <th className="border border-gray-300 justify-center text-black text-center py-2 px-3">
                   Subtotal
                 </th>
-                <th className="border border-gray-300 justify-center bg-[#25a18ee6] text-[white] text-center py-2 px-3">
+                <th className="border border-gray-300 justify-center text-black text-center py-2 px-3">
                   Acciones
                 </th>
               </tr>
