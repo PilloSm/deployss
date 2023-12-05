@@ -18,7 +18,7 @@ export default function YourComponent() {
   }, []);
 
   return (
-    <form className="bg-white flex flex-col items-center justify-center w-full overflow-hidden min-h-screen">
+    <form className="bg-[#F5F7F9] flex flex-col items-center justify-center w-full overflow-hidden min-h-screen">
       <div className="w-full max-w-screen-2xl h-full flex flex-wrap justify-around bg-white relative">
         <div className="absolute top-4 md:top-8 lg:top-12 left-1/2 transform -translate-x-1/2 font-nunito font-normal text-black text-4xl md:text-5xl lg:text-6xl text-center leading-normal tracking-normal">
           Menú
