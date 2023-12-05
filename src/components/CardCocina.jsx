@@ -4,7 +4,7 @@ import Image from "next/image";
 const CardCocina = ({ comidas }) => {
   return (
     <Link href={`/client/comida?comida=${comidas.id_comidas}`}>
-      <div className="relative mx-2 w-[303px] h-[402px] top-[30px] cursor-pointer">
+      <div className="relative mx-2 w-[303px] h-[402px] top-[30px] transition-transform transform hover:scale-110 cursor-pointer">
         <div className="relative h-full">
           <div className="w-[303px] h-[350px] top-[52px] bg-white rounded-[40px] shadow-md relative left-0"></div>
           <img
