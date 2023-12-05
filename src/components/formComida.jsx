@@ -116,7 +116,7 @@ export default function FormComida({ comidas }) {
         {platillo.descripcion}
       </p>
 
-      <p className="absolute w-[325px] top-[487px] left-[119px] font-nunito text-black">
+      <p className="absolute w-[325px] top-[500px] left-[119px] font-nunito text-black">
       <img src="https://i.ibb.co/hZGB6c6/icons8-tiempo-24.png" alt="Tiempo:" />
       </p>
       
