@@ -5,7 +5,11 @@ export async function POST(req) {
   try {
     const data = await req.json();
     const res = await conn.query(
-      `SELECT * FROM registro_estados where id_cuenta=? and estado_recibido=0`,
+      `SELECT registro_estados.*, estados.nombre_estado
+      FROM registro_estados
+      JOIN estados ON registro_estados.id_estado = estados.id_estado
+      WHERE registro_estados.id_cuenta = ? AND registro_estados.estado_recibido = 0;
+      `,
       [data.id_cuenta]
     );
     const result = await conn.query("SELECT * FROM cat_estados");
