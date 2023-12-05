@@ -97,7 +97,7 @@ const BtnOpcionesAdmin = () => {
                   src="/img/sidebar/icons8-barra-de-comida-24.png"
                   alt=""
                 />
-                Comidas
+                Nueva Comida
               </Link>
 
               <Link
