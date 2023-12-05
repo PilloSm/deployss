@@ -52,7 +52,7 @@ export default function CardPedidos({
             <div className="pedir">{estado_siguiente_nombre}</div>
           </button>
         </form>
-        {estado_actual_nombre == "pedido" ? (
+        {estado_actual_nombre == "Pedido" ? (
           <button
             onClick={handleCancelar}
             className="absolute w-[120px] h-[100px] bottom-[20px] left-[160px] bg-[#c22323e6] rounded-[20px] border-none cursor-pointer leading-normal text-center flex items-center justify-center text-white text-[16px]"
@@ -61,7 +61,7 @@ export default function CardPedidos({
           </button>
         ) : (
           <h1 className="absolute w-[120px] h-[100px] bottom-[0px] left-[185px] left-1px font-bold text-[40px]">
-            {/* NO */}
+            NO
           </h1>
         )}
       </div>

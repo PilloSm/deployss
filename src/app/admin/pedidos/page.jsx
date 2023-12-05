@@ -8,7 +8,8 @@ function Pedidos() {
   const fetchData = async () => {
     try {
       const res = await axios.get(`/api/apiCafeteria/pedidos/2`);
-      setData(res.data);
+      console.log(res.data)
+           setData(res.data);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -31,6 +32,7 @@ function Pedidos() {
 
         <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
           {data.map((item, index) => (
+            
             <CardPedidos
               key={index}
               id_pedido={item.id_pedido}
