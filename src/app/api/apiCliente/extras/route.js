@@ -4,7 +4,6 @@ import { NextResponse } from "next/server";
 export async function POST(req) {
   try {
     const data = await req.json();
-    console.log(data);
     const res = await conn.query(
       `SELECT * FROM registro_estados where id_cuenta=? and estado_recibido=0`,
       [data.id_cuenta]
@@ -14,7 +13,6 @@ export async function POST(req) {
       pedidos: [...res[0]],
       estados: [...result[0]],
     };
-    console.log(respuesta);
     return NextResponse.json(respuesta);
   } catch (error) {
     console.log(error);
