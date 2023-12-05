@@ -106,6 +106,7 @@ function AlimentoForm() {
         "Alguno de los ingredientes seleccionados tiene propiedades nulas."
       );
       alert("5");
+      alert('error en los ingredientes')
 
       return;
     }
@@ -136,8 +137,6 @@ function AlimentoForm() {
           "Content-type": "multipart/form-data",
         },
       });
-      form.current.reset();
-      router.refresh();
       window.location.reload();
     } catch (error) {
       console.error("Error al enviar la comida:", error);
