@@ -29,7 +29,7 @@ export default function TablaPedidos({ id_cuenta }) {
             <th className="py-2 px-2 md:px-4 border-b text-white">Nombres Comidas</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="h-[1000px] overflow-y-auto w-[100%]">
           {pedidos.map((pedido) => (
             <tr key={pedido.id_pedido}>
               <td className="py-2 px-2 md:px-4 border-b text-center text-black">
@@ -67,6 +67,7 @@ export default function TablaPedidos({ id_cuenta }) {
               </td>
             </tr>
           ))}
+          
         </tbody>
       </table>
     </div>
