@@ -18,21 +18,30 @@ export default function YourComponent() {
   }, []);
 
   return (
-    <form className="bg-[#F5F7F9] flex flex-col items-center justify-center w-full overflow-hidden min-h-screen">
-      <div className="w-full max-w-screen-2xl h-full flex flex-wrap justify-around bg-white relative">
-        <div className="absolute top-4 md:top-8 lg:top-12 left-1/2 transform -translate-x-1/2 font-nunito font-normal text-black text-4xl md:text-5xl lg:text-6xl text-center leading-normal tracking-normal">
-          Menú
+    <div className="max-w-[1120px] w-[95%] mx-auto">
+
+        <div className="my-12">
+          <img src="https://i.ibb.co/Gxgd5KQ/banner.jpg" className="max-w-full" alt="" />
         </div>
-        <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
-          {menuData ? (
-            menuData.map((item) => {
-              return <CardCocina comidas={item} key={item.id} />;
-            })
-          ) : (
-            <div></div>
-          )}
+
+        <div className="text-2xl font-medium mb-8">
+            Menú
+          </div>
+    
+      <form className="flex flex-col items-center justify-center w-full overflow-hidden min-h-screen">
+        <div className="w-full max-w-screen-2xl h-full flex flex-wrap justify-around bg-white relative">
+          
+          <div className="mt-16 md:mt-24 lg:mt-32 w-full max-w-screen-2xl h-full flex flex-wrap items-center justify-center">
+            {menuData ? (
+              menuData.map((item) => {
+                return <CardCocina comidas={item} key={item.id} />;
+              })
+            ) : (
+              <div></div>
+            )}
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 }
