@@ -106,7 +106,7 @@ export default function FormInicio() {
 
         <button
           onClick={() => {
-            if (captcha) {
+            if (!captcha) {
               signIn("google", {
                 callbackUrl: "/menu ",
               });
