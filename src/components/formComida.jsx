@@ -20,6 +20,7 @@ export default function FormComida({ comidas }) {
     precio: 0,
     imagen: "",
     cantidad: 0,
+    tiempo_estimado: "",
   });
   const { data: session, update } = useSession();
   const fetchData = () => {
@@ -29,8 +30,8 @@ export default function FormComida({ comidas }) {
         .then((response) => {
           const data = response.data;
           if (data) {
+            console.log(data)
             setPlatillo(data[0]);
-            console.log(platillo.cantidad);
           } else {
             console.error("La respuesta no contiene datos válidos.");
           }
@@ -113,6 +114,9 @@ export default function FormComida({ comidas }) {
       </div>
       <p className="absolute w-[595px] top-[101px] h-[250px] left-[115px] border border-black p-4 text-black rounded-[50px]">
         {platillo.descripcion}
+      </p>
+      <p className=" text-black">
+        {platillo.tiempo_estimado}
       </p>
 
       <p className="absolute w-[325px] top-[387px] left-[119px] font-nunito font-nunito font-bold text-black text-[64px] leading-normal tracking-normal">

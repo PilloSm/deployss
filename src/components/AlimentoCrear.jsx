@@ -71,7 +71,7 @@ function AlimentoForm() {
     }
     formData.append("cantidad", comidaN.cantidad);
     formData.append("tipos", comidaN.tipo);
-
+    formData.append("tiempo_estimado", comidaN.tiempo_estimado);
     try {
       const resultado = await axios.post(`/api/apiCafeteria/Comida`, formData, {
         headers: {

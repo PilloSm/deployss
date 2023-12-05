@@ -42,6 +42,7 @@ export async function POST(request) {
       precio: data.get("precio"),
       imagen: res.secure_url,
       cantidad: data.get("cantidad"),
+      tiempo_estimado: data.get("tiempo_estimado"),
     });
     return NextResponse.json(result);
   } catch (error) {
