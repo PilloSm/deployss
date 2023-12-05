@@ -61,7 +61,7 @@ export default function CardPedidos({
           </button>
         ) : (
           <h1 className="absolute w-[120px] h-[100px] bottom-[0px] left-[185px] left-1px font-bold text-[40px]">
-            NO
+            {/* NO */}
           </h1>
         )}
       </div>
