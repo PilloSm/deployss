@@ -8,25 +8,31 @@ export default function CardPedidos({
   nombres_comidas,
   cantidades_detalles,
   id_cuenta,
+  nombre,
   estado_siguiente_nombre,
   estado_actual_nombre,
   estado_actual_id,
+  saldo,
 }) {
   const router = useRouter();
   const handleEditar = async (e) => {
     e.preventDefault();
-    const res = await axios.put(
+    const res = await axios.post(
       `/api/apiCafeteria/cambiarEstadoPedido/${id_pedido}`,
       { estado: estado_actual_id }
     );
     window.location.reload();
   };
   const handleCancelar = async (e) => {
-    const res = await axios.post(
-      `/api/apiCafeteria/cambiarEstadoPedido/${id_pedido}`,
-      { estado: 1 }
-    );
-    window.location.reload();
+    try {
+      const res = await axios.put(
+        `/api/apiCafeteria/cambiarEstadoPedido/${id_pedido}`,
+        { estado: 1, saldo: saldo, id_cuenta: nombre }
+      );
+      window.location.reload();
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <div className="relative mx-2 w-[303px] h-[402px] top-[30px]">
