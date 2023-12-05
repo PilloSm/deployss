@@ -99,23 +99,8 @@ const BtnOpcionesAdmin = () => {
                 />
                 Nueva Comida
               </Link>
-
               <Link
-                href="/admin/ingredientes"
-                className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
-              >
-                <img
-                  width={50}
-                  height={50}
-                  className="pl-[4px]"
-                  src="/img/sidebar/lechuga.png"
-                  alt=""
-                />
-                Ingredientes
-              </Link>
-
-              <Link
-                href="/admin/actualizarIngredientes"
+                href="/admin/actualizarCantidades"
                 className="text-gray-300 hover:bg-gray-800 hover:border-l-4 hover:border-gray-300 hover:text-white block p-2 transition duration-200"
               >
                 <img
@@ -125,7 +110,7 @@ const BtnOpcionesAdmin = () => {
                   src="/img/sidebar/icons8-actualizar-30.png"
                   alt=""
                 />
-                Actualizar Ingrediente
+                Cantidades de comida
               </Link>
 
               <button

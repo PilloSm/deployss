@@ -11,20 +11,14 @@ export default function Actualizar() {
     nombre: "",
     descripcion: "",
     precio: 0,
-    ingredientes: [],
   });
 
   useEffect(() => {
-    axios.get(`/api/apiCafeteria/ingredientes`).then((res) => {
-      const { nombre, descripcion, precio, ingredientes } = res.data;
-      setComidaN({
-        nombre,
-        descripcion,
-        precio,
-        ingredientes,
-      });
+    axios.get(`/api/apiCafeteria/Comida`).then((res) => {
+      const comidas = res.data;
+      setComidaN({ comidas });
     });
-  }, []); 
+  }, []);
   const handleChangeCantidad = (e) => {
     if (!esNumero(parseInt(e.target.value, 10))) {
       setError("dka");
@@ -41,7 +35,7 @@ export default function Actualizar() {
       <div className="flex bg-gradient-to-r from-gray-300 via-gray-400 to-white p-8 items-center justify-center h-screen">
         <div className="w-[600px] text-black bg-white shadow-lg rounded-[50px] p-8">
           <h1 className="text-center text-2xl font-nunito font-bold text-black mb-2">
-            Actualizar Ingredientes
+            Actualizar Cantidad
           </h1>
           <div className="text-4xl font-nunito font-bold text-center text-black mb-4">
             {comidaN.nombre}
@@ -54,7 +48,7 @@ export default function Actualizar() {
           </p>
 
           <div className="flex flex-col space-y-4">
-            {comidaN.ingredientes.map((ingrediente, index) => (
+            {comidaN.map((ingrediente, index) => (
               <div className="flex flex-col space-y-1 items-center" key={index}>
                 <p className="text-lg font-nunito font-semibold">
                   {ingrediente.nombre}
@@ -105,7 +99,6 @@ export default function Actualizar() {
           </div>
         </div>
       </div>
-      <TablaExtras />
     </>
   );
 }

@@ -19,7 +19,7 @@ export default function CardPedidos({
     e.preventDefault();
     const res = await axios.post(
       `/api/apiCafeteria/cambiarEstadoPedido/${id_pedido}`,
-      { estado: estado_actual_id }
+      { estado: estado_actual_id, id_cuenta: nombre }
     );
     window.location.reload();
   };

@@ -19,6 +19,7 @@ export default function FormComida({ comidas }) {
     descripcion: "",
     precio: 0,
     imagen: "",
+    cantidad: 0,
   });
   const { data: session, update } = useSession();
   const fetchData = () => {
@@ -29,6 +30,7 @@ export default function FormComida({ comidas }) {
           const data = response.data;
           if (data) {
             setPlatillo(data[0]);
+            console.log(platillo.cantidad);
           } else {
             console.error("La respuesta no contiene datos válidos.");
           }
@@ -58,6 +60,10 @@ export default function FormComida({ comidas }) {
       alert("dkjas");
       return;
     }
+    if(comida.cantidad > platillo.cantidad){
+      alert('sasda')
+      return
+    }
     if (session) {
       const existingItemIndex = session.user.carrito.comidas.findIndex(
         (item) => item.id_comida === comida.id_comida
@@ -68,7 +74,7 @@ export default function FormComida({ comidas }) {
         const existingQuantity = parseInt(existingItem.cantidad, 10);
         const newQuantity = parseInt(comida.cantidad, 10);
         existingItem.cantidad = existingQuantity + newQuantity;
-        existingItem.subtotal += platillo.precio * newQuantity; 
+        existingItem.subtotal += platillo.precio * newQuantity;
         const updatedTotal =
           session.user.carrito.total + platillo.precio * newQuantity;
         const carritoActualizado = {
@@ -127,7 +133,7 @@ export default function FormComida({ comidas }) {
           name="cantidad"
           placeholder="1"
           min={1}
-          max={platillo.cantidad_preparable}
+          max={platillo.cantidad}
           onChange={handleChange}
           required
         />

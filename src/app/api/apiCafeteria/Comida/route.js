@@ -2,7 +2,6 @@ import { conn } from "@/libs/db";
 import { NextResponse } from "next/server";
 import { processImage } from "@/libs/processImage";
 import cloudinary from "@/libs/cloudinary";
-import Ingredientes from "@/app/admin/ingredientes/page";
 export async function POST(request) {
   try {
     const data = await request.formData();
@@ -42,26 +41,11 @@ export async function POST(request) {
       descripcion: data.get("descripcion"),
       precio: data.get("precio"),
       imagen: res.secure_url,
+      cantidad: data.get("cantidad"),
     });
-
-    const datos = data.get("ingredientes");
-    const ingredientes = JSON.parse(datos)
-    ingredientes.map(async (item) => {
-      await conn.query("INSERT into det_ingrediente set ?", {
-        id_ingrediente: item.id_ingrediente,
-        id_comida: result[0].insertId,
-        cantidad: item.cantidad,
-      });
-    });
-
-    const results = {
-      name: data.get("nombre"),
-      description: data.get("descripcion"),
-      price: data.get("precio"),
-      id: result[0].insertId,
-    };
-    return NextResponse.json(results);
+    return NextResponse.json(result);
   } catch (error) {
+    console.log(error);
     return NextResponse.json(
       {
         message: error.message,
@@ -70,5 +54,14 @@ export async function POST(request) {
         status: 500,
       }
     );
+  }
+}
+
+export async function GET() {
+  try {
+    const res = await conn.query("SELECT * FROM cat_comidas");
+    return NextResponse.json(res[0]);
+  } catch (error) {
+    return NextResponse.json({ error: error }, { status: 500 });
   }
 }
