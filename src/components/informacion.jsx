@@ -23,7 +23,7 @@ export default function InformacionCliente({ borrarCarrito }) {
        onClick={() => {
          signOut();
        }}
-       className="absolute left-[50px] w-[450px] h-[60px] top-[740px] bg-[#25a18ee6] rounded-full border-none cursor-pointer"
+       className="absolute left-[50px] w-[450px] h-[60px] top-[740px] bg-[#25a18ee6] hover:bg-[#5cc0b1e6] rounded-full border-none cursor-pointer"
      >
        <div className="absolute w-[338px] h-[20px] top-[30%] left-[14%] font-poppins font-bold text-white text-[24px] text-center leading-[20px]">
          Cerrar sesión

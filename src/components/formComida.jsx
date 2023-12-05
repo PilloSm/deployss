@@ -158,7 +158,7 @@ export default function FormComida({ comidas }) {
 
       <button
         onClick={handleSubmit}
-        className="absolute w-[698px] h-[95px] top-[650px] left-[371px] bg-[#25a18ee6] rounded-full border-none cursor-pointer"
+        className="absolute w-[698px] h-[95px] top-[650px] left-[371px] bg-[#25a18ee6] hover:bg-[#5cc0b1e6] rounded-full border-none cursor-pointer"
       >
         <div className="absolute w-[523px] h-[20px] top-[37px] left-[87px] font-poppins-bold text-[white] text-[32px] text-center leading-[20px]">
           Agregar
