@@ -77,15 +77,7 @@ function AlimentoForm() {
   }, []);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (
-      !soloLetrasDescripcion(comidaN.nombre) ||
-      !soloLetrasDescripcion(comidaN.descripcion)
-    ) {
-      setError("DS");
-      alert("1");
-      return;
-    }
+    e.preventDefault()
     if (esNumero(comidaN.precio)) {
       alert("2");
 
