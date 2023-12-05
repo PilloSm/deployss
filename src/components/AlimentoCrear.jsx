@@ -53,29 +53,6 @@ export default function AlimentoForm() {
     }
     const r = datos.tipo.find((tipo) => {
 
-    if (!ingredientesSeleccionados.length > 0) {
-      setError("da");
-      alert("4");
-
-      return;
-    }
-    if (
-      !ingredientesSeleccionados.every(
-        (ingrediente) => ingrediente.id_ingrediente && ingrediente.cantidad
-      )
-    ) {
-      setError(
-        "Alguno de los ingredientes seleccionados tiene propiedades nulas."
-      );
-      alert("5");
-      alert('error en los ingredientes')
-
-      return;
-    }
-    const r = comidaN.tipo.find((tipo) => {
-      console.log(datos.tipo);
-      tipo.id_tipos === datos.tipo;
-    });
     if (!datos.tipo.find((tipo) => tipo.id_tipos == comidaN.tipo)) {
       setError("Seleccione un tipo válido.");
       alert("6");
