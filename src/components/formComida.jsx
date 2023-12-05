@@ -19,6 +19,8 @@ export default function FormComida({ comidas }) {
     descripcion: "",
     precio: 0,
     imagen: "",
+    cantidad: 0,
+    tiempo_estimado: "",
   });
   const { data: session, update } = useSession();
   const fetchData = () => {
@@ -28,6 +30,7 @@ export default function FormComida({ comidas }) {
         .then((response) => {
           const data = response.data;
           if (data) {
+            console.log(data)
             setPlatillo(data[0]);
           } else {
             console.error("La respuesta no contiene datos válidos.");
@@ -58,6 +61,10 @@ export default function FormComida({ comidas }) {
       alert("dkjas");
       return;
     }
+    if (comida.cantidad > platillo.cantidad) {
+      alert("sasda");
+      return;
+    }
     if (session) {
       const existingItemIndex = session.user.carrito.comidas.findIndex(
         (item) => item.id_comida === comida.id_comida
@@ -68,7 +75,7 @@ export default function FormComida({ comidas }) {
         const existingQuantity = parseInt(existingItem.cantidad, 10);
         const newQuantity = parseInt(comida.cantidad, 10);
         existingItem.cantidad = existingQuantity + newQuantity;
-        existingItem.subtotal += platillo.precio * newQuantity; 
+        existingItem.subtotal += platillo.precio * newQuantity;
         const updatedTotal =
           session.user.carrito.total + platillo.precio * newQuantity;
         const carritoActualizado = {
@@ -102,18 +109,21 @@ export default function FormComida({ comidas }) {
   return (
     <>
       {error && <div className="flex bg-red-400 align-baseline">{error}</div>}
-      <div className="absolute w-[325px] top-[-8px] left-[298px] font-nunito font-semibold text-black text-[54px] rounded-[40px] leading-normal tracking-normal whitespace-nowrap">
+      <div className="absolute w-[325px] top-[-8px] left-[119px] font-nunito font-semibold text-black text-[54px] rounded-[40px] leading-normal tracking-normal whitespace-nowrap">
         {platillo.nombre}
       </div>
       <p className="absolute w-[595px] top-[101px] h-[250px] left-[115px] border border-black p-4 text-black rounded-[50px]">
         {platillo.descripcion}
+      </p>
+      <p className=" text-black">
+        {platillo.tiempo_estimado}
       </p>
 
       <p className="absolute w-[325px] top-[387px] left-[119px] font-nunito font-nunito font-bold text-black text-[64px] leading-normal tracking-normal">
         $
       </p>
       <input
-        className="absolute w-[325px] top-[387px] left-[159px] font-nunito font-nunito font-bold text-black text-[64px] leading-normal tracking-normal bg-[white]"
+        className="absolute w-[325px] top-[387px] left-[159px] font-nunito font-nunito font-bold text-black text-[64px] leading-normal tracking-normal bg-[white] text-black"
         disabled
         name="precio"
         value={platillo.precio}
@@ -123,11 +133,11 @@ export default function FormComida({ comidas }) {
       <div className="absolute w-[274px] h-[84px] top-[452px] left-[583px] rounded-[10px]">
         <input
           type="number"
-          className="text-center text-[42px] absolute w-[274px] h-[84px] top-0 left-0 bg-white rounded-[10px] border-4 border-black"
+          className="text-center text-[42px] absolute w-[274px] h-[84px] top-0 left-0 bg-white rounded-[10px] border-4 text-black border-black"
           name="cantidad"
           placeholder="1"
           min={1}
-          max={platillo.cantidad_preparable}
+          max={platillo.cantidad}
           onChange={handleChange}
           required
         />
@@ -135,7 +145,7 @@ export default function FormComida({ comidas }) {
 
       <div className="absolute w-[589px] h-[373px] top-[59px] left-[790px] bg-white">
         <img
-          className="absolute w-[386px] h-[223px] top-[27px] left-[24px] object-cover;"
+          className="absolute w-[406px] h-[250px] top-[37px] left-[24px] rounded-[10px] object-cover;"
           src={platillo.imagen}
           alt={platillo.nombre}
         />
