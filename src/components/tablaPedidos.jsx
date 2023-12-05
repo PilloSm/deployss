@@ -67,6 +67,998 @@ export default function TablaPedidos({ id_cuenta }) {
               </td>
             </tr>
           ))}
+
+          <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            <tr>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                ID_prueba
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Total_nombre
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                estado
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                10/10/10/10
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                1
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                30
+              </td>
+              <td className="py-2 px-2 md:px-4 border-b text-center text-black">
+                Sopa
+              </td>
+            </tr>
+            
+          
         </tbody>
       </table>
     </div>
