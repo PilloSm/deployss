@@ -109,7 +109,7 @@ export default function FormComida({ comidas }) {
   return (
     <>
       {error && <div className="flex bg-red-400 align-baseline">{error}</div>}
-      <div className="absolute w-[325px] top-[-8px] left-[48px] font-nunito font-semibold text-black text-[54px] rounded-[40px] leading-normal tracking-normal whitespace-nowrap">
+      <div className="absolute w-[325px] top-[-8px] left-[119px] font-nunito font-semibold text-black text-[54px] rounded-[40px] leading-normal tracking-normal whitespace-nowrap">
         {platillo.nombre}
       </div>
       <p className="absolute w-[595px] top-[101px] h-[250px] left-[115px] border border-black p-4 text-black rounded-[50px]">
@@ -145,7 +145,7 @@ export default function FormComida({ comidas }) {
 
       <div className="absolute w-[589px] h-[373px] top-[59px] left-[790px] bg-white">
         <img
-          className="absolute w-[426px] h-[283px] top-[37px] left-[24px] object-cover;"
+          className="absolute w-[406px] h-[250px] top-[37px] left-[24px] rounded-[10px] object-cover;"
           src={platillo.imagen}
           alt={platillo.nombre}
         />
